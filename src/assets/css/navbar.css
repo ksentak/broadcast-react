@@ -1,0 +1,120 @@
+.header {
+	display: block;
+	width: 100%;
+	padding-bottom: 40px;
+	position: relative;
+}
+
+@media only screen and (min-width: 991px) {
+	.header {
+		width: calc(100% + 40px);
+		margin-left: -20px;
+	}
+}
+
+.header.fixed {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+	right: 0;
+	margin: 0 auto;
+	max-width: 1240px;
+	padding: 20px 50px;
+}
+
+.text-logo {
+	float: left;
+}
+
+.text-logo a {
+	display: block;
+	outline: 0;
+}
+
+.text-logo a:focus {
+	outline: 0;
+}
+
+.logo-symbol {
+	float: left;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	background-color: #ff9800;
+	border-radius: 100px;
+	text-align: center;
+	color: #fff;
+	font-size: 28px;
+	font-weight: 800;
+	margin-right: 8px;
+	margin-top: 4px;
+}
+
+.logo-text {
+	float: left;
+	line-height: 50px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.logo-text span {
+	font-weight: 400;
+}
+
+.header-image {
+	float: left;
+	margin-right: 10px;
+}
+
+.site-nav {
+	float: right;
+}
+
+.site-main-menu {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	z-index: 99;
+}
+
+.site-main-menu li {
+	display: inline-block;
+	position: relative;
+	color: #333;
+	text-decoration: none;
+	margin-right: 40px;
+}
+
+.site-main-menu li:last-child {
+	margin-right: 0;
+}
+
+.site-main-menu li a {
+	color: #f5f5f5;
+	text-decoration: none;
+	line-height: 50px;
+	font-size: 14px;
+	opacity: 0.55;
+}
+
+.site-main-menu li.current-menu-item > a,
+.site-main-menu li.current-menu-parent > a,
+.site-main-menu li:hover > a {
+	opacity: 1;
+}
+
+@media only screen and (min-width: 992px) {
+	.site-main-menu li:hover > .sub-menu {
+		visibility: visible;
+		opacity: 1;
+		top: 100%;
+	}
+
+	.site-main-menu li:last-child > .sub-menu {
+		left: auto;
+		right: 0;
+	}
+}

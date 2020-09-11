@@ -7,14 +7,14 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
 // Components
-// import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';
 // CSS
-// import './assets/css/main.css';
+import './assets/css/main.css';
 
 const App = () => {
 	return (
 		<Router>
-			{/* <Navbar /> */}
+			<Navbar />
 			<Switch>
 				<Route exact path='/' component={Home} />
 				<Route exact path='/about' component={About} />
