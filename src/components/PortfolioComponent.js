@@ -3,7 +3,7 @@ import React from 'react';
 const PortfolioComponent = () => {
 	return (
 		<div className='PortfolioComponent'>
-			<h1>hey</h1>
+			<h1>Samples</h1>
 		</div>
 	);
 };

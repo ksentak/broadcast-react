@@ -3,7 +3,7 @@ import React from 'react';
 const AboutComponent = () => {
 	return (
 		<div className='AboutComponent'>
-			<h1>hey</h1>
+			<h1>About</h1>
 		</div>
 	);
 };
