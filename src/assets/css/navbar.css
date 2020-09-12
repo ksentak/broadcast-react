@@ -4,12 +4,13 @@ body.admin-bar .fixed-top {
 
 .navbar {
 	padding: 30px 0;
+	margin-left: 200px;
 }
 
 .navbar.fixed-top {
-	background: #1f2235;
-	-webkit-box-shadow: 0px 18px 40px -30px #23263a;
-	box-shadow: 0px 18px 40px -30px #23263a;
+	background: #222222;
+	-webkit-box-shadow: 0px 18px 40px -30px #333;
+	box-shadow: 0px 18px 40px -30px #333;
 	-webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
 	animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
 }
@@ -19,16 +20,19 @@ body.admin-bar .fixed-top {
 	padding-right: 0.5em;
 	margin: 0 10px;
 	font-weight: 500;
-	color: #fff;
-	font-size: 18px;
+	color: #f5f5f5;
+	opacity: 0.55;
+	font-size: 16px;
 }
 
 .navbar-nav a:hover {
-	color: #007ced;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .navbar-nav .active {
-	color: #007ced;
+	color: #ffffff;
+	opacity: 1;
 }
 
 .navbar-toggler {
