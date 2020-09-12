@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Error from './pages/Error';
 // Components
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 // CSS
 import './assets/css/style.css';
 
@@ -22,6 +23,7 @@ const App = () => {
 				<Route exact path='/contact' component={Contact} />
 				<Route component={Error} />
 			</Switch>
+			<Footer />
 		</Router>
 	);
 };
