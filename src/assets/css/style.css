@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+	font-family: Poppins;
+	background: #333;
+	color: #dfdfdf;
+	line-height: 26px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	color: #fff;
+}
+
+h1:not(:last-child),
+h2:not(:last-child),
+h3:not(:last-child),
+h4:not(:last-child),
+h5:not(:last-child),
+h6:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+
+a:hover {
+	color: #007ced;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: inherit;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+.main-color {
+	color: #007ced;
+}
+
+.section-title {
+	margin-bottom: 20px;
+}
+
+ul,
+ol {
+	padding-left: 20px;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 15px;
+}
+
+.error-btn {
+	background-color: #007ced;
+	color: #fff !important;
+	padding: 15px 50px;
+	border: 2px solid #007ced;
+	border-radius: 100px;
+	margin-bottom: 25px;
+}

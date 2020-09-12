@@ -6,44 +6,67 @@ class Navbar extends Component {
 	render() {
 		return (
 			<div className='Navbar'>
-				<header id='site_header' className='header'>
-					<div className='header-content clearfix'>
-						<div className='text-logo'>
-							<NavLink exact to='/'>
-								<div className='logo-symbol'>M</div>
-								<div className='logo-text'>
-									Matt <span>Murphy</span>
-								</div>
-							</NavLink>
-						</div>
-
-						<div className='site-nav mobile-menu-hide'>
-							<ul className='leven-classNameic-menu site-main-menu'>
-								<li className='menu-item menu-item-has-children current-menu-item'>
-									<NavLink exact to='/about'>
-										About Me
+				<nav className='navbar navbar-expand-sm'>
+					<div className='container'>
+						<button
+							className='navbar-toggler ml-auto'
+							type='button'
+							data-toggle='collapse'
+							data-target='#navbarMobile'
+							aria-controls='navbarMobile'
+							aria-expanded='false'
+							aria-label='Toggle navigation'
+						>
+							<span className='navbar-toggler-icon' />
+						</button>
+						<div className='collapse navbar-collapse' id='navbarMobile'>
+							<ul id='menu-primary' className='navbar-nav ml-auto'>
+								{/* Home */}
+								<li data-toggle='collapse' data-target='.navbar-collapse.show'>
+									<NavLink exact to='/' activeClassName='active' className='nav-Link'>
+										Home
 									</NavLink>
 								</li>
 
-								<li className='menu-item menu-item-has-children'>
-									<NavLink exact to='/portfolio'>
+								{/* About */}
+								<li data-toggle='collapse' data-target='.navbar-collapse.show'>
+									<NavLink
+										exact
+										to='/about'
+										activeClassName='active'
+										className='nav-Link'
+									>
+										About
+									</NavLink>
+								</li>
+
+								{/* Portfolio */}
+								<li data-toggle='collapse' data-target='.navbar-collapse.show'>
+									<NavLink
+										exact
+										to='/portfolio'
+										activeClassName='active'
+										className='nav-Link'
+									>
 										Portfolio
 									</NavLink>
 								</li>
 
-								<li className='menu-item'>
-									<NavLink exact to='/contact'>
+								{/* Contact */}
+								<li data-toggle='collapse' data-target='.navbar-collapse.show'>
+									<NavLink
+										exact
+										to='/contact'
+										activeClassName='active'
+										className='nav-Link'
+									>
 										Contact
 									</NavLink>
 								</li>
 							</ul>
 						</div>
-
-						<div className='menu-toggle mobile-visible'>
-							<i className='fa fa-bars'></i>
-						</div>
 					</div>
-				</header>
+				</nav>
 			</div>
 		);
 	}
