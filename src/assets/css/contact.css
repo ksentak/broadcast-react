@@ -1,0 +1,51 @@
+/*** Contact ***/
+.ContactComponent {
+	padding-bottom: 85px;
+}
+
+.custom-span-contact {
+	font-weight: 600;
+	padding-left: 50px;
+	line-height: 21px;
+	padding-top: 5px;
+}
+
+.contact-icon {
+	left: 0;
+	top: 10px;
+	font-size: 33px;
+}
+
+.custom-span-contact i.fa-phone-square {
+	font-size: 39px;
+	top: 7px;
+}
+
+.custom-span-contact span {
+	text-transform: uppercase;
+	opacity: 0.8;
+	font-weight: 400;
+}
+
+.contact-img {
+	height: 300px;
+	width: 475px;
+}
+
+@media screen and (max-width: 768px) {
+	.contact-img {
+		height: 305px;
+		width: 360px;
+	}
+}
+
+.contact-img2 {
+	height: 450px;
+	width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+	.contact-img2 {
+		width: 92%;
+	}
+}

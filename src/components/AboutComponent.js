@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazy-load';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
@@ -47,11 +48,13 @@ class AboutComponent extends Component {
 						</div>
 						{/* Bio Photo */}
 						<div className='col-md-6'>
-							<img
-								src={aboutImage}
-								alt='Matt Headshot'
-								class='img-fluid about-img pl-3'
-							/>
+							<LazyLoad height={550} offset={200}>
+								<img
+									src={aboutImage}
+									alt='Matt Headshot'
+									class='img-fluid about-img pl-3'
+								/>
+							</LazyLoad>
 						</div>
 					</div>
 
