@@ -10,14 +10,18 @@
 	padding-top: 5px;
 }
 
-.contact-icon {
-	left: 0;
-	top: 10px;
-	font-size: 33px;
+.contact-title {
+	font-size: 26px;
 }
 
-.custom-span-contact i.fa-phone-square {
-	font-size: 39px;
+.contact-icon {
+	font-size: 26px;
+	left: 0;
+	top: 10px;
+}
+
+.custom-span-contact .contact-icon {
+	font-size: 32px;
 	top: 7px;
 }
 
