@@ -53,3 +53,9 @@ body.admin-bar .fixed-top {
 		padding-bottom: 7px;
 	}
 }
+
+@media (max-width: 576px) {
+	.navbar {
+		margin-left: 0;
+	}
+}
