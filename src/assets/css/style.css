@@ -78,7 +78,7 @@ li > ol {
 }
 
 .poppins-font {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', Helvetica, sans-serif;
 }
 
 .open-sans-font {
@@ -101,6 +101,19 @@ li > ol {
 	border-radius: 100px;
 	margin-bottom: 25px;
 } */
+
+.btn {
+	border-radius: 26px;
+	font-weight: 500;
+	height: 46px;
+	line-height: 46px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0 40px;
+	font-family: 'Poppins', sans-serif;
+	letter-spacing: 0.5px;
+}
 
 hr.separator {
 	border-top: 1px solid #f5f5f5;
@@ -146,4 +159,30 @@ hr.separator {
 .custom-title {
 	padding-bottom: 22px;
 	font-size: 26px;
+}
+
+@media (max-width: 576px) {
+	.title-section {
+		padding: 16px 16px 14px;
+		background: #252525;
+		border-bottom: 1px solid #333;
+		margin-bottom: 36px;
+		position: absolute;
+		right: 0;
+		left: 0;
+		z-index: 11;
+		top: 0;
+	}
+
+	.title-section h1 {
+		font-size: 24px;
+	}
+
+	.title-bg {
+		display: none;
+	}
+
+	.custom-title {
+		font-size: 21px;
+	}
 }

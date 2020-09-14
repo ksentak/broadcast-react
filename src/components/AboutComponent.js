@@ -3,7 +3,6 @@ import LazyLoad from 'react-lazy-load';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-
 import aboutImage from '../assets/img/MM1_Home.jpg';
 
 class AboutComponent extends Component {
@@ -74,7 +73,6 @@ class AboutComponent extends Component {
 								<ul>
 									<li>
 										<div className='icon'>
-											{/* <i className='fa fa-briefcase'></i> */}
 											<FontAwesomeIcon icon={faBriefcase} fixedWidth />
 										</div>
 										<span className='time open-sans-font text-uppercase'>
@@ -101,7 +99,6 @@ class AboutComponent extends Component {
 								<ul>
 									<li>
 										<div className='icon'>
-											{/* <i className='fa fa-briefcase'></i> */}
 											<FontAwesomeIcon icon={faBriefcase} fixedWidth />
 										</div>
 										<span className='time open-sans-font text-uppercase'>
@@ -133,7 +130,6 @@ class AboutComponent extends Component {
 								<ul>
 									<li>
 										<div className='icon'>
-											{/* <i className='fa fa-briefcase'></i> */}
 											<FontAwesomeIcon icon={faBriefcase} fixedWidth />
 										</div>
 										<span className='time open-sans-font text-uppercase'>
@@ -163,7 +159,6 @@ class AboutComponent extends Component {
 								<ul>
 									<li>
 										<div className='icon'>
-											{/* <i className='fa fa-briefcase'></i> */}
 											<FontAwesomeIcon icon={faBriefcase} fixedWidth />
 										</div>
 										<span className='time open-sans-font text-uppercase'>
@@ -195,7 +190,6 @@ class AboutComponent extends Component {
 								<ul>
 									<li>
 										<div className='icon'>
-											{/* <i className='fa fa-graduation-cap'></i> */}
 											<FontAwesomeIcon icon={faGraduationCap} fixedWidth />
 										</div>
 										<span className='time open-sans-font text-uppercase'>

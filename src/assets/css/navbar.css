@@ -5,6 +5,7 @@ body.admin-bar .fixed-top {
 .navbar {
 	padding: 30px 0;
 	margin-left: 200px;
+	z-index: 21;
 }
 
 .navbar.fixed-top {
@@ -50,12 +51,17 @@ body.admin-bar .fixed-top {
 
 @media (max-width: 768px) {
 	.navbar-nav li {
-		padding-bottom: 7px;
+		margin-top: 6px;
+		padding-bottom: 4px;
 	}
 }
 
 @media (max-width: 576px) {
 	.navbar {
 		margin-left: 0;
+	}
+
+	.navContainer {
+		margin-top: -25px;
 	}
 }

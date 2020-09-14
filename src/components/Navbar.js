@@ -7,7 +7,7 @@ class Navbar extends Component {
 		return (
 			<div className='Navbar'>
 				<nav className='navbar navbar-expand-sm'>
-					<div className='container'>
+					<div className='container navContainer'>
 						<button
 							className='navbar-toggler ml-auto'
 							type='button'
@@ -48,7 +48,7 @@ class Navbar extends Component {
 										activeClassName='active'
 										className='nav-Link'
 									>
-										Portfolio
+										Samples
 									</NavLink>
 								</li>
 
