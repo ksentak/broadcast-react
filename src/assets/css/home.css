@@ -1,15 +1,24 @@
 .home-title {
-	font-size: 62px;
+	font-size: 68px;
+	font-weight: 600;
+}
+
+.homeRow1 {
+	height: 82vh;
 }
 
 .home-text {
 	margin-top: 135px;
-	height: 60vh;
+	margin-left: -50px;
+}
+
+.home-text p {
+	font-size: 16px;
+	line-height: 28px;
 }
 
 .home-video {
 	margin-top: 135px;
-	height: 70vh;
 }
 
 .btn-about {
@@ -20,6 +29,13 @@
 .btn-about:hover {
 	background-color: #007ced;
 	color: #e5e5e5;
+}
+
+.home-img {
+	height: 400px;
+	width: 95%;
+	border-radius: 20px;
+	border: none;
 }
 
 .testimonial-item {
@@ -97,8 +113,17 @@
 }
 
 @media (max-width: 576px) {
+	.homeRow1 {
+		height: auto;
+	}
+
+	.home-title {
+		font-size: 56px;
+	}
+
 	.home-text {
 		margin-top: 0;
+		margin-left: 0;
 	}
 
 	.home-video {

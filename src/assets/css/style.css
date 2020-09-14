@@ -117,7 +117,7 @@ li > ol {
 
 hr.separator {
 	border-top: 1px solid #f5f5f5;
-	margin: 60px auto 40px;
+	margin: 20px auto 40px;
 	max-width: 40%;
 	opacity: 0.55;
 }

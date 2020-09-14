@@ -2,18 +2,22 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import LazyLoad from 'react-lazy-load';
 import Player from 'react-lazy-youtube';
+// Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteRight, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+// Images
 import Ruocco from '../assets/img/RyanRuocco_Testimonial.jpg';
 import McGinnis from '../assets/img/TomMcGinnis.jpg';
+import MM2 from '../assets/img/MM2_Home.jpg';
+import MM3 from '../assets/img/MM3_Home.jpeg';
 
 class HomeComponent extends Component {
 	render() {
 		return (
 			<div className='HomeComponent'>
 				<div className='container'>
-					<div className='row'>
-						<div className='home-text col-sm-12 col-md-6 text-center'>
+					<div className='row homeRow1'>
+						<div className='home-text col-sm-12 col-md-6 text-center pb-4'>
 							<h1 className='text-center poppins-font home-title'>
 								Matt <span className='main-color'>Murphy</span>
 							</h1>
@@ -28,7 +32,15 @@ class HomeComponent extends Component {
 							</Link>
 						</div>
 						<div className='home-video col-sm-12 col-md-6'>
-							<Player id='xhhR3QVmKqU' imageSize='maxresdefault' />
+							<Player
+								id='xhhR3QVmKqU'
+								imageSize='maxresdefault'
+								className='youtube-video-home'
+								styles={{
+									height: '330px',
+									width: '95%'
+								}}
+							/>
 							{/* <iframe
 								width='560'
 								height='330'
@@ -40,6 +52,25 @@ class HomeComponent extends Component {
 							></iframe> */}
 						</div>
 					</div>
+
+					<hr className='separator mt-5' />
+					<div className='row'>
+						<div className='col-sm-6'>
+							<img
+								src={MM2}
+								alt='Matt interviewing Adam Silver'
+								className='img-fluid home-img'
+							/>
+						</div>
+						<div className='col-sm-6'>
+							<img
+								src={MM3}
+								alt='Matt interviewing Adam Silver'
+								className='img-fluid home-img'
+							/>
+						</div>
+					</div>
+					<hr className='separator mt-5' />
 
 					{/* Testimonials */}
 					<div className='row'>

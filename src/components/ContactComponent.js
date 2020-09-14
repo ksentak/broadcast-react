@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazy-load';
 import { Timeline } from 'react-twitter-widgets';
-
+// Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
-
+// Images
 import contactImage1 from '../assets/img/MM4_Contact.jpeg';
 import contactImage2 from '../assets/img/MM5_Contact.jpg';
 
