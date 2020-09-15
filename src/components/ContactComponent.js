@@ -55,7 +55,7 @@ class ContactComponent extends Component {
 							</p>
 						</div>
 
-						<div class='col-12 col-lg-7'>
+						<div className='col-12 col-lg-7'>
 							<LazyLoad offset={200}>
 								<img
 									src={contactImage1}
@@ -117,7 +117,7 @@ class ContactComponent extends Component {
 							</LazyLoad>
 						</div>
 
-						<div class='col-12 col-lg-7 d-none d-lg-block'>
+						<div className='col-12 col-lg-7 d-none d-lg-block'>
 							<LazyLoad offset={200}>
 								<img
 									src={contactImage2}
