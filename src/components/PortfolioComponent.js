@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LazyLoad from 'react-lazy-load';
 import Player from 'react-lazy-youtube';
-import ReactPlayer from 'react-player';
+import ReactPlayer from 'react-player/lazy';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -267,11 +267,16 @@ class PortfolioComponent extends Component {
 												NBA G League Radio Play-by-Play
 											</h2>
 											{/* Portfolio Modal - Media */}
-											<ReactPlayer
+											{/* <ReactPlayer
 												url='https://soundcloud.com/matt_murphy04/nba-g-league-pxp-2019-20-season-delaware-blue-coats'
-												width='auto'
-												height='330px'
-											/>
+												// width='auto'
+												// height='330px'
+											/> */}
+											<iframe
+												height='100'
+												allow='autoplay'
+												src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/797813995&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true'
+											></iframe>
 										</div>
 									</div>
 								</div>
@@ -309,11 +314,11 @@ class PortfolioComponent extends Component {
 												CFB Radio Play-by-Play Highlights
 											</h2>
 											{/* Portfolio Modal - Media */}
-											<ReactPlayer
+											{/* <ReactPlayer
 												url='https://soundcloud.com/matt_murphy04/alvernia-football-2019-sounds-of-the-first-3-weeks-jakib-media-sports'
-												width='auto'
-												height='330px'
-											/>
+												// width='auto'
+												// height='330px'
+											/> */}
 										</div>
 									</div>
 								</div>
@@ -351,11 +356,11 @@ class PortfolioComponent extends Component {
 												CFB Radio First MAC Win Highlights
 											</h2>
 											{/* Portfolio Modal - Media */}
-											<ReactPlayer
+											{/* <ReactPlayer
 												url='https://soundcloud.com/matt_murphy04/alvernia-fb-game-winning-td-and-final-call-first-mac-win-101219-jakib-media-sports'
-												width='auto'
-												height='330px'
-											/>
+												// width='auto'
+												// height='330px'
+											/> */}
 										</div>
 									</div>
 								</div>
@@ -393,11 +398,11 @@ class PortfolioComponent extends Component {
 												Hosting on 76ers Podcast Network
 											</h2>
 											{/* Portfolio Modal - Media */}
-											<ReactPlayer
+											{/* <ReactPlayer
 												url='https://soundcloud.com/sixers/coat-check-joe-richmond'
-												width='auto'
-												height='330px'
-											/>
+												// width='auto'
+												// height='330px'
+											/> */}
 										</div>
 									</div>
 								</div>
