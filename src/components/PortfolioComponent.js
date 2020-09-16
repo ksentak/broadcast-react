@@ -9,6 +9,12 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import '../assets/css/portfolio.css';
 
 // Images
+import portfolioImg1 from '../assets/img/portfolio/mm_portfolio_img1.jpg';
+import portfolioImg2 from '../assets/img/portfolio/mm_portfolio_img2.jpg';
+import portfolioImg3 from '../assets/img/portfolio/mm_portfolio_img3.jpg';
+import portfolioImg4 from '../assets/img/portfolio/mm_portfolio_img4.jpg';
+import portfolioImg5 from '../assets/img/portfolio/mm_portfolio_img5.jpg';
+import portfolioImg6 from '../assets/img/portfolio/mm_portfolio_img6.jpg';
 
 class PortfolioComponent extends Component {
 	render() {
@@ -35,7 +41,7 @@ class PortfolioComponent extends Component {
 								<LazyLoad>
 									<img
 										className='img-fluid portfolio-img'
-										src='https://i.ytimg.com/vi/xhhR3QVmKqU/maxresdefault.jpg'
+										src={portfolioImg1}
 										alt='NBA G League TV Play-by-Play Youtube Thumbnail'
 									/>
 								</LazyLoad>
@@ -56,7 +62,7 @@ class PortfolioComponent extends Component {
 								<LazyLoad>
 									<img
 										className='img-fluid portfolio-img'
-										src='https://i.ytimg.com/vi/WNuL9exqL94/maxresdefault.jpg'
+										src={portfolioImg2}
 										alt='On Camera/Hosting Youtube Thumbnail'
 									/>
 								</LazyLoad>
@@ -76,7 +82,7 @@ class PortfolioComponent extends Component {
 								<LazyLoad>
 									<img
 										className='img-fluid portfolio-img'
-										src='https://i1.sndcdn.com/artworks-qPkQfsn9mOm3GGQV-MONmXA-t500x500.jpg'
+										src={portfolioImg3}
 										alt='NBA G League Radio Play-by-Play Soundcloud'
 									/>
 								</LazyLoad>
@@ -96,7 +102,7 @@ class PortfolioComponent extends Component {
 								<LazyLoad>
 									<img
 										className='img-fluid portfolio-img'
-										src='https://i1.sndcdn.com/artworks-000604786579-k13fa2-t500x500.jpg'
+										src={portfolioImg4}
 										alt='CFB Radio Play-by-Play Highlights Soundcloud'
 									/>
 								</LazyLoad>
@@ -116,7 +122,7 @@ class PortfolioComponent extends Component {
 								<LazyLoad>
 									<img
 										className='img-fluid portfolio-img'
-										src='https://i1.sndcdn.com/artworks-000611816926-9jcsd5-t500x500.jpg'
+										src={portfolioImg5}
 										alt='CFB Radio First MAC Win Highlights Soundcloud'
 									/>
 								</LazyLoad>
@@ -136,7 +142,7 @@ class PortfolioComponent extends Component {
 								<LazyLoad>
 									<img
 										className='img-fluid portfolio-img'
-										src='https://i1.sndcdn.com/artworks-7ldpc73oweptUiIF-HP9y2w-t500x500.jpg'
+										src={portfolioImg6}
 										alt='Hosting on 76ers Podcast Network Soundcloud'
 									/>
 								</LazyLoad>
