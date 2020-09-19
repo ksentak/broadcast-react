@@ -51,14 +51,14 @@ class HomeComponent extends Component {
 							<img
 								src={MM2}
 								alt='Matt interviewing Adam Silver'
-								className='img-fluid home-img home-img1'
+								className='img-fluid home-img pb-2 pb-sm-none'
 							/>
 						</div>
 						<div className='col-sm-6'>
 							<img
 								src={MM3}
 								alt='Matt interviewing Adam Silver'
-								className='img-fluid home-img'
+								className='img-fluid home-img pt-2 pt-sm-none'
 							/>
 						</div>
 					</div>
