@@ -70,7 +70,7 @@ class AboutComponent extends Component {
 						</div>
 
 						{/* Resume Box 1 */}
-						<div className='col-lg-6 m-15px-tb pl-sm-5'>
+						<div className='col-lg-6 m-15px-tb'>
 							<div className='resume-box'>
 								<ul>
 									<li>
@@ -127,7 +127,7 @@ class AboutComponent extends Component {
 						</div>
 
 						{/* Resume Box 3 */}
-						<div className='col-lg-6 m-15px-tb pl-sm-5'>
+						<div className='col-lg-6 m-15px-tb'>
 							<div className='resume-box'>
 								<ul>
 									<li>
@@ -187,7 +187,7 @@ class AboutComponent extends Component {
 						</div>
 
 						{/* Resume Box 5 */}
-						<div className='col-lg-6 m-15px-tb pl-sm-5'>
+						<div className='col-lg-6 m-15px-tb'>
 							<div className='resume-box'>
 								<ul>
 									<li>
