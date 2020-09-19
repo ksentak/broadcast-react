@@ -17,7 +17,7 @@ class HomeComponent extends Component {
 			<div className='HomeComponent'>
 				<div className='container'>
 					<div className='row homeRow1'>
-						<div className='home-text col-sm-12 col-md-6 text-center pb-4'>
+						<div className='home-text col-sm-12 col-lg-6 text-center pb-4'>
 							<h1 className='text-center poppins-font home-title'>
 								Matt <span className='main-color'>Murphy</span>
 							</h1>
@@ -31,7 +31,7 @@ class HomeComponent extends Component {
 								<button className='btn btn-about'>More about Matt</button>
 							</Link>
 						</div>
-						<div className='home-video col-sm-12 col-md-6'>
+						<div className='home-video col-sm-12 col-lg-6'>
 							<Player
 								id='xhhR3QVmKqU'
 								imageSize='maxresdefault'
@@ -41,25 +41,17 @@ class HomeComponent extends Component {
 									width: '95%'
 								}}
 							/>
-							{/* <iframe
-								width='560'
-								height='330'
-								src='https://www.youtube.com/embed/xhhR3QVmKqU'
-								title='Matt Murphys YouTube Highlight Reel'
-								frameBorder='0'
-								allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-								allowFullScreen
-							></iframe> */}
 						</div>
 					</div>
 
-					<hr className='separator mt-5' />
-					<div className='row'>
+					<hr className='separator' />
+
+					<div className='row text-center text-md-none pt-3 pb-3'>
 						<div className='col-sm-6'>
 							<img
 								src={MM2}
 								alt='Matt interviewing Adam Silver'
-								className='img-fluid home-img'
+								className='img-fluid home-img home-img1'
 							/>
 						</div>
 						<div className='col-sm-6'>
@@ -70,7 +62,8 @@ class HomeComponent extends Component {
 							/>
 						</div>
 					</div>
-					<hr className='separator mt-5' />
+
+					<hr className='separator' />
 
 					{/* Testimonials */}
 					<div className='row'>

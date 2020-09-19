@@ -32,10 +32,9 @@
 }
 
 .home-img {
-	height: 400px;
+	height: 380px;
 	width: 95%;
 	border-radius: 20px;
-	border: none;
 }
 
 .testimonial-item {
@@ -112,7 +111,22 @@
 	z-index: -1;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1080px) {
+	.homeRow1 {
+		height: auto;
+	}
+
+	.home-text {
+		margin-top: 15px;
+		margin-left: 0;
+	}
+
+	.home-video {
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 768px) {
 	.homeRow1 {
 		height: auto;
 	}
@@ -128,5 +142,16 @@
 
 	.home-video {
 		margin-top: 0;
+	}
+
+	.home-img {
+		height: 315px;
+		width: 330px;
+	}
+}
+
+@media (max-width: 576px) {
+	.home-img1 {
+		padding-bottom: 20px;
 	}
 }

@@ -93,15 +93,6 @@ li > ol {
 	margin-bottom: 30px;
 }
 
-/* .error-btn {
-	background-color: #007ced;
-	color: #fff !important;
-	padding: 15px 50px;
-	border: 2px solid #007ced;
-	border-radius: 100px;
-	margin-bottom: 25px;
-} */
-
 .btn {
 	border-radius: 26px;
 	font-weight: 500;
@@ -117,7 +108,7 @@ li > ol {
 
 hr.separator {
 	border-top: 1px solid #f5f5f5;
-	margin: 20px auto 40px;
+	margin: 30px auto 30px;
 	max-width: 40%;
 	opacity: 0.55;
 }
@@ -159,6 +150,20 @@ hr.separator {
 .custom-title {
 	padding-bottom: 22px;
 	font-size: 26px;
+}
+
+@media (max-width: 768px) {
+	.title-section h1 {
+		font-size: 36px;
+	}
+
+	.title-bg {
+		display: none;
+	}
+
+	.custom-title {
+		font-size: 21px;
+	}
 }
 
 @media (max-width: 576px) {
