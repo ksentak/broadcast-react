@@ -53,7 +53,7 @@ class AboutComponent extends Component {
 								<img
 									src={aboutImage}
 									alt='Matt Headshot'
-									className='img-fluid about-img pl-3'
+									className='img-fluid about-img pl-none pl-md-3'
 								/>
 							</LazyLoad>
 						</div>
