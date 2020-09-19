@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import LazyLoad from 'react-lazy-load';
 import Player from 'react-lazy-youtube';
 import ReactPlayer from 'react-player/lazy';
+// Components
+import PhotoCarousel from './PhotoCarousel';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -149,6 +151,9 @@ class PortfolioComponent extends Component {
 								<p className='project-title'>Hosting on 76ers Podcast Network</p>
 							</div>
 						</div>
+					</div>
+					<div class='col-12 col-md-8 offset-md-2 text-center photography pb-4'>
+						<PhotoCarousel />
 					</div>
 				</div>
 

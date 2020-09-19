@@ -27,13 +27,28 @@
 	border-radius: 6px;
 }
 
+.carousel-item img {
+	height: 85vh;
+	width: 300px;
+}
+
 @media (max-width: 768px) {
 	.portfolio-img {
 		height: 200px;
 		width: 350px;
 	}
+
 	.portfolio-item-caption:hover {
 		opacity: 0;
+	}
+
+	.photography {
+		padding: 0;
+		margin-left: 10px;
+	}
+
+	.carousel-item img {
+		height: 300px;
 	}
 }
 
@@ -68,29 +83,6 @@
 .youtube-video-modal {
 	width: 200px;
 }
-
-/* .modal-links {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-} */
-
-/* .modal-btn {
-	background-color: #282c45;
-	color: #fff !important;
-	padding: 10px 20px;
-	border: 2px solid #ff4a57;
-	border-radius: 100px;
-	margin: 10px;
-}
-
-.modal-btn:hover {
-	background-color: #ff4a57;
-} */
-
-/* .modal-btn:hover .modal-icon {
-	color: #fff;
-} */
 
 .modal-icon {
 	margin-right: 5px;
