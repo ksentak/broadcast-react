@@ -5,9 +5,6 @@ import Player from 'react-lazy-youtube';
 import ReactPlayer from 'react-player/lazy';
 // Components
 import PhotoCarousel from './PhotoCarousel';
-// Icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
 // Images
 import portfolioImg1 from '../assets/img/portfolio/mm_portfolio_img1.jpg';
 import portfolioImg2 from '../assets/img/portfolio/mm_portfolio_img2.jpg';
@@ -15,6 +12,9 @@ import portfolioImg3 from '../assets/img/portfolio/mm_portfolio_img3.jpg';
 import portfolioImg4 from '../assets/img/portfolio/mm_portfolio_img4.jpg';
 import portfolioImg5 from '../assets/img/portfolio/mm_portfolio_img5.jpg';
 import portfolioImg6 from '../assets/img/portfolio/mm_portfolio_img6.jpg';
+// Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const PortfolioComponent = (props) => {
 	const { className = 'portfolio-modal' } = props;
@@ -389,49 +389,6 @@ const PortfolioComponent = (props) => {
 					<PhotoCarousel />
 				</div>
 			</div>
-
-			{/* Portfolio Modal 6 */}
-			<div
-				className='portfolio-modal modal fade'
-				id='portfolioModal6'
-				tabIndex='-1'
-				role='dialog'
-				aria-hidden='true'
-			>
-				<div className='modal-dialog modal-lg' role='document'>
-					<div className='modal-content'>
-						<button
-							type='button'
-							className='close'
-							data-dismiss='modal'
-							aria-label='Close'
-						>
-							<span aria-hidden='true'>
-								<FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
-							</span>
-						</button>
-						<div className='modal-body text-center'>
-							<div className='container'>
-								<div className='row justify-content-center'>
-									<div className='col-12 col-sm-10'>
-										{/* Portfolio Modal - Title */}
-										<h2 className='portfolio-modal-title text-uppercase mb-3'>
-											Hosting on 76ers Podcast Network
-										</h2>
-										{/* Portfolio Modal - Media */}
-										<ReactPlayer
-											url='https://soundcloud.com/sixers/coat-check-joe-richmond'
-											width='auto'
-											height='330px'
-										/>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			{/* End of Modals */}
 		</div>
 	);
 };

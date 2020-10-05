@@ -1,11 +1,11 @@
 import React from 'react';
 import LazyLoad from 'react-lazy-load';
+// Images
+import aboutImage from '../assets/img/MM1_Home.jpg';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
-// Images
-import aboutImage from '../assets/img/MM1_Home.jpg';
 
 const AboutComponent = () => {
 	return (

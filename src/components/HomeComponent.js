@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LazyLoad from 'react-lazy-load';
 import Player from 'react-lazy-youtube';
-// Icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuoteRight, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 // Images
 import Ruocco from '../assets/img/RyanRuocco_Testimonial.jpg';
 import McGinnis from '../assets/img/TomMcGinnis.jpg';
 import MM2 from '../assets/img/MM2_Home.jpg';
 import MM3 from '../assets/img/MM3_Home.jpeg';
+// Icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteRight, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 const HomeComponent = () => {
 	return (
