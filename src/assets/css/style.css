@@ -586,6 +586,10 @@ body.admin-bar .fixed-top {
 	color: #fff;
 }
 
+.modal-content {
+	background-color: #222222;
+}
+
 .modal-img {
 	border-radius: 6px;
 }
