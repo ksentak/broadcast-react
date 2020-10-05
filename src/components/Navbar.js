@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-// CSS
-import '../assets/css/navbar.css';
 
 class Navbar extends Component {
+	constructor(props) {
+		super(props);
+		this.state = { menu: false };
+		this.toggleNav = this.toggleNav.bind(this);
+	}
+
+	toggleNav() {
+		this.setState({ menu: !this.state.menu });
+	}
+
 	render() {
+		const show = this.state.menu ? 'show' : '';
 		return (
 			<div className='Navbar'>
 				<nav className='navbar navbar-expand-sm'>
@@ -12,25 +21,24 @@ class Navbar extends Component {
 						<button
 							className='navbar-toggler ml-auto'
 							type='button'
-							data-toggle='collapse'
-							data-target='#navbarMobile'
 							aria-controls='navbarMobile'
 							aria-expanded='false'
 							aria-label='Toggle navigation'
+							onClick={this.toggleNav}
 						>
 							<span className='navbar-toggler-icon' />
 						</button>
-						<div className='collapse navbar-collapse' id='navbarMobile'>
+						<div className={'collapse navbar-collapse ' + show} id='navbarMobile'>
 							<ul id='menu-primary' className='navbar-nav ml-auto'>
 								{/* Home */}
-								<li data-toggle='collapse' data-target='.navbar-collapse.show'>
+								<li onClick={this.toggleNav}>
 									<NavLink exact to='/' activeClassName='active' className='nav-Link'>
 										Home
 									</NavLink>
 								</li>
 
 								{/* About */}
-								<li data-toggle='collapse' data-target='.navbar-collapse.show'>
+								<li onClick={this.toggleNav}>
 									<NavLink
 										exact
 										to='/about'
@@ -42,7 +50,7 @@ class Navbar extends Component {
 								</li>
 
 								{/* Portfolio */}
-								<li data-toggle='collapse' data-target='.navbar-collapse.show'>
+								<li onClick={this.toggleNav}>
 									<NavLink
 										exact
 										to='/portfolio'
@@ -54,7 +62,7 @@ class Navbar extends Component {
 								</li>
 
 								{/* Contact */}
-								<li data-toggle='collapse' data-target='.navbar-collapse.show'>
+								<li onClick={this.toggleNav}>
 									<NavLink
 										exact
 										to='/contact'

@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
-import {
-	Carousel,
-	CarouselItem,
-	CarouselControl
-	// CarouselIndicators,
-	// CarouselCaption
-} from 'reactstrap';
+import { Carousel, CarouselItem, CarouselControl } from 'reactstrap';
 
 import Carousel1 from '../assets/img/samplePhotos/Samples_Photography1.JPEG';
 import Carousel2 from '../assets/img/samplePhotos/Samples_Photography2.jpg';

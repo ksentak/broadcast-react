@@ -7,9 +7,6 @@ import PhotoCarousel from './PhotoCarousel';
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-// CSS
-import '../assets/css/portfolio.css';
-
 // Images
 import portfolioImg1 from '../assets/img/portfolio/mm_portfolio_img1.jpg';
 import portfolioImg2 from '../assets/img/portfolio/mm_portfolio_img2.jpg';
