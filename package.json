@@ -1,6 +1,6 @@
 {
 	"name": "broadcast-react",
-	"version": "2.1.0",
+	"version": "2.3.0",
 	"private": true,
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -17,7 +17,7 @@
 		"react-lazy-youtube": "^1.0.1",
 		"react-player": "^2.6.2",
 		"react-router-dom": "^5.2.0",
-		"react-scripts": "3.4.3",
+		"react-scripts": "^4.0.0",
 		"react-twitter-widgets": "^1.9.5",
 		"reactstrap": "^8.6.0",
 		"styled-components": "^5.2.0"
