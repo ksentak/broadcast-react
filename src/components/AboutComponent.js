@@ -82,9 +82,10 @@ const AboutComponent = () => {
 										Sep 2018 - Present
 									</span>
 									<h5 className='poppins-font text-uppercase'>
-										Play-by-Play Broadcaster; Communications Coordinator
+										Play-by-Play Broadcaster; Communications
+										<br />
 										<span className='place open-sans-font'>
-											Delaware Blue Coats
+											- Delaware Blue Coats
 										</span>
 									</h5>
 									<p className='open-sans-font'>
@@ -112,8 +113,9 @@ const AboutComponent = () => {
 									</span>
 									<h5 className='poppins-font text-uppercase'>
 										Play-by-Play Broadcaster
+										<br />
 										<span className='place open-sans-font'>
-											Alvernia University Football
+											- Alvernia University Football
 										</span>
 									</h5>
 									<p className='open-sans-font'>
@@ -143,7 +145,8 @@ const AboutComponent = () => {
 									</span>
 									<h5 className='poppins-font text-uppercase'>
 										Sports Radio Production Assistant/Board Operator
-										<span className='place open-sans-font'>Westwood One</span>
+										<br />
+										<span className='place open-sans-font'>- Westwood One</span>
 									</h5>
 									<p className='open-sans-font'>
 										-Production assistant for Westwood One's national radio
@@ -172,8 +175,9 @@ const AboutComponent = () => {
 									</span>
 									<h5 className='poppins-font text-uppercase'>
 										Sports Reporter, Play-by-Play
+										<br />
 										<span className='place open-sans-font'>
-											WFUV Public Radio
+											- WFUV Public Radio
 										</span>
 									</h5>
 									<p className='open-sans-font'>
@@ -206,8 +210,9 @@ const AboutComponent = () => {
 									</span>
 									<h5 className='poppins-font text-uppercase'>
 										Bachelor's Degree, Economics, Communications
+										<br />
 										<span className='place open-sans-font'>
-											Fordham University
+											- Fordham University
 										</span>
 									</h5>
 								</li>
