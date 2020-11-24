@@ -470,7 +470,7 @@ const SampleComponent2 = (props) => {
 
 						<div
 							className='portfolio-item portfolio-writing mx-auto'
-							onClick={toggle7}
+							onClick={toggle8}
 						>
 							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
 								<div className='portfolio-item-caption-content text-center'></div>
@@ -489,8 +489,8 @@ const SampleComponent2 = (props) => {
 					{/* Modal 8 */}
 					<Modal
 						size='lg'
-						isOpen={modal7}
-						toggle={toggle7}
+						isOpen={modal8}
+						toggle={toggle8}
 						className={className}
 						role='dialog'
 					>
@@ -498,7 +498,7 @@ const SampleComponent2 = (props) => {
 							<button
 								type='button'
 								className='close'
-								onClick={toggle7}
+								onClick={toggle8}
 								aria-label='Close'
 							>
 								<span aria-hidden='true'>

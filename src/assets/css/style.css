@@ -592,6 +592,18 @@ body.admin-bar .fixed-top {
 		width: 350px;
 	}
 
+	.portfolio-img-writing-1 {
+		height: 250px;
+		width: 540px;
+		border-radius: 6px;
+	}
+
+	.portfolio-img-sample-2 {
+		height: 250px;
+		width: 600px;
+		border-radius: 6px;
+	}
+
 	.portfolio-item-caption:hover {
 		opacity: 0;
 	}
