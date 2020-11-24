@@ -89,6 +89,9 @@ const AboutComponent = () => {
 										</span>
 									</h5>
 									<p className='open-sans-font'>
+										-Harris Blitzer Sports & Entertainment: Philadelphia
+										76ers/Delaware Blue Coats/76ers Gaming Club (GC).
+										<br />
 										-Play-by-Play, Communications, Social Media for the Delaware
 										Blue Coats, NBA G League affiliate of the Philadelphia
 										76ers.
