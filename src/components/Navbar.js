@@ -28,36 +28,46 @@ const Navbar = () => {
 						<ul id='menu-primary' className='navbar-nav ml-auto'>
 							{/* Home */}
 							<li onClick={toggleNav}>
-								<NavLink exact to='/' activeClassName='active' className='nav-Link'>
+								<NavLink
+									exact
+									to='/'
+									activeClassName='active'
+									className='nav-Link'
+								>
 									Home
 								</NavLink>
 							</li>
 							{/* About */}
 							<li onClick={toggleNav}>
-								<NavLink exact to='/about' activeClassName='active' className='nav-Link'>
-									About
-								</NavLink>
-							</li>
-							{/* Portfolio */}
-							<li onClick={toggleNav}>
 								<NavLink
 									exact
-									to='/portfolio'
+									to='/samples-org'
 									activeClassName='active'
 									className='nav-Link'
 								>
 									Samples
 								</NavLink>
 							</li>
+							{/* Portfolio */}
+							<li onClick={toggleNav}>
+								<NavLink
+									exact
+									to='/samples-1'
+									activeClassName='active'
+									className='nav-Link'
+								>
+									Samples 1
+								</NavLink>
+							</li>
 							{/* Contact */}
 							<li onClick={toggleNav}>
 								<NavLink
 									exact
-									to='/contact'
+									to='/samples-2'
 									activeClassName='active'
 									className='nav-Link'
 								>
-									Contact
+									Samples 2
 								</NavLink>
 							</li>
 						</ul>

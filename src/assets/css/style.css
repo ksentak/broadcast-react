@@ -561,9 +561,29 @@ body.admin-bar .fixed-top {
 	border-radius: 6px;
 }
 
+.portfolio-img-writing {
+	height: 400px;
+	width: 445px;
+	border-radius: 6px;
+}
+
+.portfolio-img-writing-1 {
+	height: 400px;
+	width: 540px;
+	border-radius: 6px;
+}
+
+.portfolio-img-sample-2 {
+	height: 400px;
+	width: 600px;
+	border-radius: 6px;
+}
+
 .carousel-item img {
-	height: 85vh;
+	/* height: 85vh; */
+	height: 400px;
 	width: 300px;
+	border-radius: 6px;
 }
 
 @media (max-width: 768px) {

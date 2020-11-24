@@ -4,21 +4,21 @@ import LazyLoad from 'react-lazy-load';
 import Player from 'react-lazy-youtube';
 import ReactPlayer from 'react-player/lazy';
 // Components
-import PhotoCarousel from './PhotoCarousel';
+import PhotoCarousel from '../PhotoCarousel';
 // Images
-import portfolioImg1 from '../assets/img/portfolio/mm_portfolio_img1.jpg';
-import portfolioImg2 from '../assets/img/portfolio/mm_portfolio_img2.jpg';
-import portfolioImg3 from '../assets/img/portfolio/mm_portfolio_img3.jpg';
-import portfolioImg4 from '../assets/img/portfolio/mm_portfolio_img4.jpg';
-import portfolioImg5 from '../assets/img/portfolio/mm_portfolio_img5.jpg';
-import portfolioImg6 from '../assets/img/portfolio/mm_portfolio_img6.jpg';
-import portfolioImg7 from '../assets/img/portfolio/mm_portfolio_img7.jpg';
+import portfolioImg1 from '../../assets/img/portfolio/mm_portfolio_img1.jpg';
+import portfolioImg2 from '../../assets/img/portfolio/mm_portfolio_img2.jpg';
+import portfolioImg3 from '../../assets/img/portfolio/mm_portfolio_img3.jpg';
+import portfolioImg4 from '../../assets/img/portfolio/mm_portfolio_img4.jpg';
+import portfolioImg5 from '../../assets/img/portfolio/mm_portfolio_img5.jpg';
+import portfolioImg6 from '../../assets/img/portfolio/mm_portfolio_img6.jpg';
+import portfolioImg7 from '../../assets/img/portfolio/mm_portfolio_img7.jpg';
 
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const PortfolioComponent = (props) => {
+const SampleComponent1 = (props) => {
 	const { className = 'portfolio-modal' } = props;
 	const [modal1, setModal1] = useState(false);
 	const [modal2, setModal2] = useState(false);
@@ -392,7 +392,7 @@ const PortfolioComponent = (props) => {
 						</div>
 					</Modal>
 					{/* Project 7 */}
-					<div className='col-lg-5 col-md-6'>
+					<div className='col-lg-6 col-md-6'>
 						<p className='project-title'>Writing</p>
 
 						<div
@@ -404,7 +404,7 @@ const PortfolioComponent = (props) => {
 							</div>
 							<LazyLoad>
 								<img
-									className='img-fluid portfolio-img portfolio-img-writing'
+									className='img-fluid portfolio-img portfolio-img-writing-1'
 									src={portfolioImg7}
 									alt='Writing sample'
 								/>
@@ -460,7 +460,7 @@ const PortfolioComponent = (props) => {
 							</div>
 						</div>
 					</Modal>
-					<div class='col-lg-7 col-md-6 text-center photography pb-4'>
+					<div class='col-lg-6 col-md-6 text-center photography pb-4'>
 						<p className='project-title'>Photography</p>
 						<PhotoCarousel />
 					</div>
@@ -470,4 +470,4 @@ const PortfolioComponent = (props) => {
 	);
 };
 
-export default PortfolioComponent;
+export default SampleComponent1;
