@@ -41,33 +41,33 @@ const Navbar = () => {
 							<li onClick={toggleNav}>
 								<NavLink
 									exact
-									to='/samples-org'
+									to='/about'
+									activeClassName='active'
+									className='nav-Link'
+								>
+									About
+								</NavLink>
+							</li>
+							{/* Samples */}
+							<li onClick={toggleNav}>
+								<NavLink
+									exact
+									to='/samples'
 									activeClassName='active'
 									className='nav-Link'
 								>
 									Samples
 								</NavLink>
 							</li>
-							{/* Portfolio */}
-							<li onClick={toggleNav}>
-								<NavLink
-									exact
-									to='/samples-1'
-									activeClassName='active'
-									className='nav-Link'
-								>
-									Samples 1
-								</NavLink>
-							</li>
 							{/* Contact */}
 							<li onClick={toggleNav}>
 								<NavLink
 									exact
-									to='/samples-2'
+									to='/contact'
 									activeClassName='active'
 									className='nav-Link'
 								>
-									Samples 2
+									Contact
 								</NavLink>
 							</li>
 						</ul>

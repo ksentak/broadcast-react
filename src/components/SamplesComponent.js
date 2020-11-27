@@ -1,24 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Modal } from 'reactstrap';
 import LazyLoad from 'react-lazy-load';
 import Player from 'react-lazy-youtube';
 import ReactPlayer from 'react-player/lazy';
 // Components
-import PhotoCarousel from '../PhotoCarousel';
+import PhotoCarousel from './PhotoCarousel';
 // Images
-import portfolioImg1 from '../../assets/img/portfolio/mm_portfolio_img1.jpg';
-import portfolioImg2 from '../../assets/img/portfolio/mm_portfolio_img2.jpg';
-import portfolioImg3 from '../../assets/img/portfolio/mm_portfolio_img3.jpg';
-import portfolioImg4 from '../../assets/img/portfolio/mm_portfolio_img4.jpg';
-import portfolioImg5 from '../../assets/img/portfolio/mm_portfolio_img5.jpg';
-import portfolioImg6 from '../../assets/img/portfolio/mm_portfolio_img6.jpg';
-import portfolioImg7 from '../../assets/img/portfolio/mm_portfolio_img7.jpg';
+import portfolioImg1 from '../assets/img/portfolio/mm_portfolio_img1.jpg';
+import portfolioImg2 from '../assets/img/portfolio/mm_portfolio_img2.jpg';
+import portfolioImg3 from '../assets/img/portfolio/mm_portfolio_img3.jpg';
+import portfolioImg4 from '../assets/img/portfolio/mm_portfolio_img4.jpg';
+import portfolioImg5 from '../assets/img/portfolio/mm_portfolio_img5.jpg';
+import portfolioImg6 from '../assets/img/portfolio/mm_portfolio_img6.jpg';
+import portfolioImg7 from '../assets/img/portfolio/mm_portfolio_img7.jpg';
 
 // Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const SampleComponent1 = (props) => {
+const SamplesComponent = (props) => {
+	const [width, setWidth] = useState(window.innerWidth);
+	const breakpoint = 768;
+
+	useEffect(() => {
+		const handleResizeWindow = () => setWidth(window.innerWidth);
+		window.addEventListener('resize', handleResizeWindow);
+		return () => {
+			window.removeEventListener('resize', handleResizeWindow);
+		};
+	}, []);
+
 	const { className = 'portfolio-modal' } = props;
 	const [modal1, setModal1] = useState(false);
 	const [modal2, setModal2] = useState(false);
@@ -27,6 +38,7 @@ const SampleComponent1 = (props) => {
 	const [modal5, setModal5] = useState(false);
 	const [modal6, setModal6] = useState(false);
 	const [modal7, setModal7] = useState(false);
+	const [modal8, setModal8] = useState(false);
 
 	const toggle1 = () => setModal1(!modal1);
 	const toggle2 = () => setModal2(!modal2);
@@ -35,6 +47,11 @@ const SampleComponent1 = (props) => {
 	const toggle5 = () => setModal5(!modal5);
 	const toggle6 = () => setModal6(!modal6);
 	const toggle7 = () => setModal7(!modal7);
+	const toggle8 = () => {
+		if (width < breakpoint) {
+			setModal8(!modal8);
+		}
+	};
 
 	return (
 		<div className='PortfolioComponent'>
@@ -48,6 +65,7 @@ const SampleComponent1 = (props) => {
 				<div className='row text-center'>
 					{/* Project 1 */}
 					<div className='col-lg-4 col-md-6'>
+						<p className='project-title'>NBA G League TV Play-by-Play</p>
 						<div className='portfolio-item mx-auto' onClick={toggle1}>
 							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
 								<div className='portfolio-item-caption-content text-center'></div>
@@ -59,7 +77,7 @@ const SampleComponent1 = (props) => {
 									alt='NBA G League TV Play-by-Play Youtube Thumbnail'
 								/>
 							</LazyLoad>
-							<p className='project-title'>NBA G League TV Play-by-Play</p>
+							{/* <p className='project-title'>NBA G League TV Play-by-Play</p> */}
 						</div>
 					</div>
 					{/* Modal 1 */}
@@ -108,6 +126,7 @@ const SampleComponent1 = (props) => {
 
 					{/* Project 2 */}
 					<div className='col-lg-4 col-md-6'>
+						<p className='project-title'>On Camera/Hosting</p>
 						<div className='portfolio-item mx-auto' onClick={toggle2}>
 							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
 								<div className='portfolio-item-caption-content text-center'></div>
@@ -119,7 +138,7 @@ const SampleComponent1 = (props) => {
 									alt='On Camera/Hosting Youtube Thumbnail'
 								/>
 							</LazyLoad>
-							<p className='project-title'>On Camera/Hosting</p>
+							{/* <p className='project-title'>On Camera/Hosting</p> */}
 						</div>
 					</div>
 					{/* Modal 2 */}
@@ -168,6 +187,7 @@ const SampleComponent1 = (props) => {
 
 					{/* Project 3 */}
 					<div className='col-lg-4 col-md-6'>
+						<p className='project-title'>NBA G League Radio Play-by-Play</p>
 						<div className='portfolio-item mx-auto' onClick={toggle3}>
 							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
 								<div className='portfolio-item-caption-content text-center'></div>
@@ -179,7 +199,7 @@ const SampleComponent1 = (props) => {
 									alt='NBA G League Radio Play-by-Play Soundcloud'
 								/>
 							</LazyLoad>
-							<p className='project-title'>NBA G League Radio Play-by-Play</p>
+							{/* <p className='project-title'>NBA G League Radio Play-by-Play</p> */}
 						</div>
 					</div>
 					{/* Modal 3 */}
@@ -224,6 +244,7 @@ const SampleComponent1 = (props) => {
 
 					{/* Project 4 */}
 					<div className='col-lg-4 col-md-6'>
+						<p className='project-title'>CFB Radio Play-by-Play Highlights</p>
 						<div className='portfolio-item mx-auto' onClick={toggle4}>
 							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
 								<div className='portfolio-item-caption-content text-center text-white'></div>
@@ -235,7 +256,7 @@ const SampleComponent1 = (props) => {
 									alt='CFB Radio Play-by-Play Highlights Soundcloud'
 								/>
 							</LazyLoad>
-							<p className='project-title'>CFB Radio Play-by-Play Highlights</p>
+							{/* <p className='project-title'>CFB Radio Play-by-Play Highlights</p> */}
 						</div>
 					</div>
 					{/* Modal 4 */}
@@ -280,6 +301,7 @@ const SampleComponent1 = (props) => {
 
 					{/* Project 5 */}
 					<div className='col-lg-4 col-md-6'>
+						<p className='project-title'>CFB Radio First MAC Win Highlights</p>
 						<div className='portfolio-item mx-auto' onClick={toggle5}>
 							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
 								<div className='portfolio-item-caption-content text-center text-white'></div>
@@ -291,9 +313,9 @@ const SampleComponent1 = (props) => {
 									alt='CFB Radio First MAC Win Highlights Soundcloud'
 								/>
 							</LazyLoad>
-							<p className='project-title'>
+							{/* <p className='project-title'>
 								CFB Radio First MAC Win Highlights
-							</p>
+							</p> */}
 						</div>
 					</div>
 					{/* Modal 5 */}
@@ -338,6 +360,7 @@ const SampleComponent1 = (props) => {
 
 					{/* Project 6 */}
 					<div className='col-lg-4 col-md-6'>
+						<p className='project-title'>Hosting on 76ers Podcast Network</p>
 						<div className='portfolio-item mx-auto' onClick={toggle6}>
 							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
 								<div className='portfolio-item-caption-content text-center text-white'></div>
@@ -349,7 +372,7 @@ const SampleComponent1 = (props) => {
 									alt='Hosting on 76ers Podcast Network Soundcloud'
 								/>
 							</LazyLoad>
-							<p className='project-title'>Hosting on 76ers Podcast Network</p>
+							{/* <p className='project-title'>Hosting on 76ers Podcast Network</p> */}
 						</div>
 					</div>
 					{/* Modal 6 */}
@@ -392,7 +415,7 @@ const SampleComponent1 = (props) => {
 						</div>
 					</Modal>
 					{/* Project 7 */}
-					<div className='col-lg-6 col-md-6'>
+					<div className='col-md-6'>
 						<p className='project-title'>Writing</p>
 
 						<div
@@ -404,12 +427,11 @@ const SampleComponent1 = (props) => {
 							</div>
 							<LazyLoad>
 								<img
-									className='img-fluid portfolio-img portfolio-img-writing-1'
+									className='img-fluid portfolio-img portfolio-img-lg'
 									src={portfolioImg7}
 									alt='Writing sample'
 								/>
 							</LazyLoad>
-							{/* <p className='project-title'>Writing</p> */}
 						</div>
 					</div>
 					{/* Modal 7 */}
@@ -460,14 +482,61 @@ const SampleComponent1 = (props) => {
 							</div>
 						</div>
 					</Modal>
-					<div class='col-lg-6 col-md-6 text-center photography pb-4'>
+
+					{/* Project 8 */}
+					<div className='col-md-6'>
 						<p className='project-title'>Photography</p>
-						<PhotoCarousel />
+						<div
+							className='portfolio-item portfolio-writing mx-auto'
+							onClick={toggle8}
+						>
+							<div className='portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100'>
+								<div className='portfolio-item-caption-content text-center'></div>
+							</div>
+							<LazyLoad>
+								<PhotoCarousel className='img-fluid portfolio-img' />
+							</LazyLoad>
+						</div>
 					</div>
+					{/* Modal 8 */}
+					<Modal
+						size='lg'
+						isOpen={modal8}
+						toggle={toggle8}
+						className={className}
+						role='dialog'
+					>
+						<div className='modal-content'>
+							<button
+								type='button'
+								className='close'
+								onClick={toggle8}
+								aria-label='Close'
+							>
+								<span aria-hidden='true'>
+									<FontAwesomeIcon icon={faTimes}></FontAwesomeIcon>
+								</span>
+							</button>
+							<div className='modal-body text-center'>
+								<div className='container'>
+									<div className='row justify-content-center'>
+										<div className='col-12 col-sm-10'>
+											{/* Portfolio Modal - Title */}
+											<h2 className='portfolio-modal-title text-uppercase mb-3'>
+												Photography
+											</h2>
+											{/* Portfolio Modal - Media */}
+											<PhotoCarousel />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</Modal>
 				</div>
 			</div>
 		</div>
 	);
 };
 
-export default SampleComponent1;
+export default SamplesComponent;
