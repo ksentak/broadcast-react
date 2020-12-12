@@ -46,27 +46,29 @@ const PhotoCarousel = () => {
 		setActiveIndex(nextIndex);
 	};
 
-	const slides = items.map((item) => {
-		return (
-			<CarouselItem
-				onExiting={() => setAnimating(true)}
-				onExited={() => setAnimating(false)}
-				key={item.src}
-			>
-				<img src={item.src} alt={item.altText} className='d-block w-100' />
-			</CarouselItem>
-		);
-	});
+	const slides = items.map((item) => (
+		<CarouselItem
+			onExiting={() => setAnimating(true)}
+			onExited={() => setAnimating(false)}
+			key={item.src}
+		>
+			<img src={item.src} alt={item.altText} className="d-block w-100" />
+		</CarouselItem>
+	));
 
 	return (
 		<Carousel activeIndex={activeIndex} next={next} previous={previous}>
 			{slides}
 			<CarouselControl
-				direction='prev'
-				directionText='Previous'
+				direction="prev"
+				directionText="Previous"
 				onClickHandler={previous}
 			/>
-			<CarouselControl direction='next' directionText='Next' onClickHandler={next} />
+			<CarouselControl
+				direction="next"
+				directionText="Next"
+				onClickHandler={next}
+			/>
 		</Carousel>
 	);
 };

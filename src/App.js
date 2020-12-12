@@ -13,20 +13,18 @@ import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/css/style.css';
 
-const App = () => {
-	return (
-		<Router>
-			<Navbar />
-			<Switch>
-				<Route exact path='/' component={Home} />
-				<Route exact path='/about' component={About} />
-				<Route exact path='/samples' component={Samples} />
-				<Route exact path='/contact' component={Contact} />
-				<Route component={Error} />
-			</Switch>
-			<Footer />
-		</Router>
-	);
-};
+const App = () => (
+	<Router>
+		<Navbar />
+		<Switch>
+			<Route exact path="/" component={Home} />
+			<Route exact path="/about" component={About} />
+			<Route exact path="/samples" component={Samples} />
+			<Route exact path="/contact" component={Contact} />
+			<Route component={Error} />
+		</Switch>
+		<Footer />
+	</Router>
+);
 
 export default App;
