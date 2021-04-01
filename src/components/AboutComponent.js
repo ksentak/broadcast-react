@@ -27,8 +27,8 @@ const AboutComponent = () => (
 						Matt Murphy is a play-by-play broadcaster and versatile
 						communications professional. Since 2018, Matt has served as the
 						television voice of the Delaware Blue Coats, the NBA G League
-						affiliate of the Philadelphia 76ers. He is the youngest play-by-play
-						broadcaster in the NBA G League at age 24.
+						affiliate of the Philadelphia 76ers. At age 22, he became the
+						youngest play-by-play broadcaster in the NBA G League.
 					</p>
 					<p>
 						In August 2018, Matt was named the inaugural radio voice of the
