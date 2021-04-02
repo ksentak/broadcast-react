@@ -5,6 +5,7 @@ import Player from 'react-lazy-youtube';
 import ReactPlayer from 'react-player/lazy';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import SpotifyPlayer from './SpotifyPlayer';
 
 const SamplesItem = (props) => {
 	const [modal, setModal] = useState(false);
@@ -16,6 +17,7 @@ const SamplesItem = (props) => {
 		projectImg,
 		imgAlt,
 		isYoutubeVideo,
+		isSpotify,
 		videoId,
 		url
 	} = props;
@@ -75,6 +77,8 @@ const SamplesItem = (props) => {
 												width: 'auto'
 											}}
 										/>
+									) : isSpotify ? (
+										<SpotifyPlayer src={url} />
 									) : (
 										<ReactPlayer url={url} width="auto" height="330px" />
 									)}

@@ -12,6 +12,7 @@ import portfolioImg4 from '../assets/img/portfolio/mm_portfolio_img4.jpg';
 import portfolioImg5 from '../assets/img/portfolio/mm_portfolio_img5.jpg';
 import portfolioImg6 from '../assets/img/portfolio/mm_portfolio_img6.jpg';
 import portfolioImg7 from '../assets/img/portfolio/mm_portfolio_img7.jpg';
+import portfolioImg8 from '../assets/img/portfolio/mm_portfolio_img8.jpg';
 
 const SamplesComponent = (props) => {
 	const [modal1, setModal1] = useState(false);
@@ -48,9 +49,10 @@ const SamplesComponent = (props) => {
 					<div className="col-lg-4 col-md-6">
 						<SamplesItem
 							projectTitle="2021 NBA G League Bubble Highlights"
-							projectImg={portfolioImg1}
+							projectImg={portfolioImg8}
 							imgAlt="2021 NBA G League Bubble Highlights"
 							isYoutubeVideo
+							isSpotify={false}
 							videoId="OxVNaZy_8nc"
 						/>
 					</div>
@@ -62,6 +64,7 @@ const SamplesComponent = (props) => {
 							projectImg={portfolioImg1}
 							imgAlt="NBA G League TV Play-by-Play Youtube Thumbnail"
 							isYoutubeVideo
+							isSpotify={false}
 							videoId="xhhR3QVmKqU"
 						/>
 					</div>
@@ -73,6 +76,7 @@ const SamplesComponent = (props) => {
 							projectImg={portfolioImg2}
 							imgAlt="On Camera/Hosting Youtube Thumbnail"
 							isYoutubeVideo
+							isSpotify={false}
 							videoId="WNuL9exqL94"
 						/>
 					</div>
@@ -84,6 +88,7 @@ const SamplesComponent = (props) => {
 							projectImg={portfolioImg3}
 							imgAlt="NBA G League Radio Play-by-Play Soundcloud"
 							isYoutubeVideo={false}
+							isSpotify={false}
 							url="https://soundcloud.com/matt_murphy04/nba-g-league-pxp-2019-20-season-delaware-blue-coats"
 						/>
 					</div>
@@ -95,6 +100,7 @@ const SamplesComponent = (props) => {
 							projectImg={portfolioImg4}
 							imgAlt="CFB Radio Play-by-Play Highlights Soundcloud"
 							isYoutubeVideo={false}
+							isSpotify={false}
 							url="https://soundcloud.com/matt_murphy04/alvernia-football-2019-sounds-of-the-first-3-weeks-jakib-media-sports"
 						/>
 					</div>
@@ -106,6 +112,7 @@ const SamplesComponent = (props) => {
 							projectImg={portfolioImg5}
 							imgAlt="CFB Radio 1st MAC Win Highlights Soundcloud"
 							isYoutubeVideo={false}
+							isSpotify={false}
 							url="https://soundcloud.com/matt_murphy04/alvernia-fb-game-winning-td-and-final-call-first-mac-win-101219-jakib-media-sports"
 						/>
 					</div>
@@ -117,7 +124,8 @@ const SamplesComponent = (props) => {
 							projectImg={portfolioImg6}
 							imgAlt="Hosting on 76ers Podcast Network Soundcloud"
 							isYoutubeVideo={false}
-							url="https://soundcloud.com/sixers/coat-check-joe-richmond"
+							isSpotify={true}
+							url="https://open.spotify.com/episode/3AmsZXqPn3P1MWWR7jPlRs?si=lBCNDTd1TKW9pvMy5gA75A"
 						/>
 					</div>
 
