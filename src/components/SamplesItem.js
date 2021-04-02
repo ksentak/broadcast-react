@@ -3,7 +3,6 @@ import { Modal } from 'reactstrap';
 import LazyLoad from 'react-lazy-load';
 import Player from 'react-lazy-youtube';
 import ReactPlayer from 'react-player/lazy';
-// Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
@@ -24,7 +23,6 @@ const SamplesItem = (props) => {
 	return (
 		<>
 			{/* Project */}
-			{/* <div className="col-lg-4 col-md-6"> */}
 			<p className="project-title">{projectTitle}</p>
 			<div className="portfolio-item mx-auto" onClick={toggle}>
 				<div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -38,7 +36,6 @@ const SamplesItem = (props) => {
 					/>
 				</LazyLoad>
 			</div>
-			{/* </div> */}
 
 			{/* Modal */}
 			<Modal

@@ -1,13 +1,10 @@
 import React from 'react';
 import LazyLoad from 'react-lazy-load';
-// Images
-// Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faBriefcase,
 	faGraduationCap
 } from '@fortawesome/free-solid-svg-icons';
-
 import aboutImage from '../assets/img/MM1_Home.jpg';
 
 const AboutComponent = () => (

@@ -1,8 +1,6 @@
 import React from 'react';
 import LazyLoad from 'react-lazy-load';
 import { Timeline } from 'react-twitter-widgets';
-// Images
-// Icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
