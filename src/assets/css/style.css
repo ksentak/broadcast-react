@@ -153,7 +153,7 @@ hr.separator {
 	font-size: 26px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.title-section h1 {
 		font-size: 36px;
 	}
@@ -167,7 +167,7 @@ hr.separator {
 	}
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
 	.title-section {
 		padding: 16px 16px 14px;
 		background: #252525;
@@ -245,14 +245,14 @@ body.admin-bar .fixed-top {
 	margin-right: 30px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.navbar-nav li {
 		margin-top: 6px;
 		padding-bottom: 4px;
 	}
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
 	.navbar {
 		margin-left: 0;
 	}
@@ -377,7 +377,7 @@ body.admin-bar .fixed-top {
 	z-index: -1;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
 	.homeRow1 {
 		height: auto;
 	}
@@ -392,7 +392,7 @@ body.admin-bar .fixed-top {
 	}
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.homeRow1 {
 		height: auto;
 	}
@@ -532,7 +532,13 @@ body.admin-bar .fixed-top {
 	border-radius: 6px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
+	.portfolio-img-lg {
+		height: 210px;
+	}
+}
+
+@media screen and (max-width: 768px) {
 	.portfolio-img {
 		height: 300px;
 		width: 95%;
@@ -593,7 +599,7 @@ body.admin-bar .fixed-top {
 	color: #007ced;
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
 	.youtube-video-modal {
 		width: 95%;
 	}

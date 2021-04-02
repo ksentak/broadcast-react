@@ -24,21 +24,21 @@ const SamplesItem = (props) => {
 	return (
 		<>
 			{/* Project */}
-			<div className="col-lg-4 col-md-6">
-				<p className="project-title">{projectTitle}</p>
-				<div className="portfolio-item mx-auto" onClick={toggle}>
-					<div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div className="portfolio-item-caption-content text-center" />
-					</div>
-					<LazyLoad>
-						<img
-							className="img-fluid portfolio-img"
-							src={projectImg}
-							alt={imgAlt}
-						/>
-					</LazyLoad>
+			{/* <div className="col-lg-4 col-md-6"> */}
+			<p className="project-title">{projectTitle}</p>
+			<div className="portfolio-item mx-auto" onClick={toggle}>
+				<div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+					<div className="portfolio-item-caption-content text-center" />
 				</div>
+				<LazyLoad>
+					<img
+						className="img-fluid portfolio-img"
+						src={projectImg}
+						alt={imgAlt}
+					/>
+				</LazyLoad>
 			</div>
+			{/* </div> */}
 
 			{/* Modal */}
 			<Modal

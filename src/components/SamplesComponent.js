@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Modal } from 'reactstrap';
 import LazyLoad from 'react-lazy-load';
-// Components
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import SamplesItem from './SamplesItem';
 import PhotoCarousel from './PhotoCarousel';
-// Images
 import portfolioImg1 from '../assets/img/portfolio/mm_portfolio_img1.jpg';
 import portfolioImg2 from '../assets/img/portfolio/mm_portfolio_img2.jpg';
 import portfolioImg3 from '../assets/img/portfolio/mm_portfolio_img3.jpg';
@@ -14,7 +12,6 @@ import portfolioImg4 from '../assets/img/portfolio/mm_portfolio_img4.jpg';
 import portfolioImg5 from '../assets/img/portfolio/mm_portfolio_img5.jpg';
 import portfolioImg6 from '../assets/img/portfolio/mm_portfolio_img6.jpg';
 import portfolioImg7 from '../assets/img/portfolio/mm_portfolio_img7.jpg';
-// Icons
 
 const SamplesComponent = (props) => {
 	const [modal1, setModal1] = useState(false);
@@ -48,61 +45,84 @@ const SamplesComponent = (props) => {
 			<div className="container">
 				<div className="row text-center">
 					{/* Project 1 */}
-					<SamplesItem
-						projectTitle="NBA G League TV Play-by-Play"
-						projectImg={portfolioImg1}
-						imgAlt="NBA G League TV Play-by-Play Youtube Thumbnail"
-						isYoutubeVideo
-						videoId="xhhR3QVmKqU"
-					/>
+					<div className="col-lg-4 col-md-6">
+						<SamplesItem
+							projectTitle="2021 NBA G League Bubble Highlights"
+							projectImg={portfolioImg1}
+							imgAlt="2021 NBA G League Bubble Highlights"
+							isYoutubeVideo
+							videoId="OxVNaZy_8nc"
+						/>
+					</div>
 
 					{/* Project 2 */}
-					<SamplesItem
-						projectTitle="On Camera/Hosting"
-						projectImg={portfolioImg2}
-						imgAlt="On Camera/Hosting Youtube Thumbnail"
-						isYoutubeVideo
-						videoId="WNuL9exqL94"
-					/>
+					<div className="col-lg-4 col-md-6">
+						<SamplesItem
+							projectTitle="NBA G League TV Play-by-Play"
+							projectImg={portfolioImg1}
+							imgAlt="NBA G League TV Play-by-Play Youtube Thumbnail"
+							isYoutubeVideo
+							videoId="xhhR3QVmKqU"
+						/>
+					</div>
 
 					{/* Project 3 */}
-					<SamplesItem
-						projectTitle="NBA G League Radio Play-by-Play"
-						projectImg={portfolioImg3}
-						imgAlt="NBA G League Radio Play-by-Play Soundcloud"
-						isYoutubeVideo={false}
-						url="https://soundcloud.com/matt_murphy04/nba-g-league-pxp-2019-20-season-delaware-blue-coats"
-					/>
+					<div className="col-lg-4 col-md-6">
+						<SamplesItem
+							projectTitle="On Camera/Hosting"
+							projectImg={portfolioImg2}
+							imgAlt="On Camera/Hosting Youtube Thumbnail"
+							isYoutubeVideo
+							videoId="WNuL9exqL94"
+						/>
+					</div>
 
 					{/* Project 4 */}
-					<SamplesItem
-						projectTitle="CFB Radio Play-by-Play Highlights"
-						projectImg={portfolioImg4}
-						imgAlt="CFB Radio Play-by-Play Highlights Soundcloud"
-						isYoutubeVideo={false}
-						url="https://soundcloud.com/matt_murphy04/alvernia-football-2019-sounds-of-the-first-3-weeks-jakib-media-sports"
-					/>
+					<div className="col-lg-3 col-md-6">
+						<SamplesItem
+							projectTitle="NBA G League Radio Play-by-Play"
+							projectImg={portfolioImg3}
+							imgAlt="NBA G League Radio Play-by-Play Soundcloud"
+							isYoutubeVideo={false}
+							url="https://soundcloud.com/matt_murphy04/nba-g-league-pxp-2019-20-season-delaware-blue-coats"
+						/>
+					</div>
 
 					{/* Project 5 */}
-					<SamplesItem
-						projectTitle="CFB Radio First MAC Win Highlights"
-						projectImg={portfolioImg5}
-						imgAlt="CFB Radio First MAC Win Highlights Soundcloud"
-						isYoutubeVideo={false}
-						url="https://soundcloud.com/matt_murphy04/alvernia-fb-game-winning-td-and-final-call-first-mac-win-101219-jakib-media-sports"
-					/>
+					<div className="col-lg-3 col-md-6">
+						<SamplesItem
+							projectTitle="CFB Radio Play-by-Play Highlights"
+							projectImg={portfolioImg4}
+							imgAlt="CFB Radio Play-by-Play Highlights Soundcloud"
+							isYoutubeVideo={false}
+							url="https://soundcloud.com/matt_murphy04/alvernia-football-2019-sounds-of-the-first-3-weeks-jakib-media-sports"
+						/>
+					</div>
 
 					{/* Project 6 */}
-					<SamplesItem
-						projectTitle="Hosting on 76ers Podcast Network"
-						projectImg={portfolioImg6}
-						imgAlt="Hosting on 76ers Podcast Network Soundcloud"
-						isYoutubeVideo={false}
-						url="https://soundcloud.com/sixers/coat-check-joe-richmond"
-					/>
+					<div className="col-lg-3 col-md-6">
+						<SamplesItem
+							projectTitle="CFB Radio 1st MAC Win Highlights"
+							projectImg={portfolioImg5}
+							imgAlt="CFB Radio 1st MAC Win Highlights Soundcloud"
+							isYoutubeVideo={false}
+							url="https://soundcloud.com/matt_murphy04/alvernia-fb-game-winning-td-and-final-call-first-mac-win-101219-jakib-media-sports"
+						/>
+					</div>
 
 					{/* Project 7 */}
-					<div className="col-md-6">
+					<div className="col-lg-3 col-md-6">
+						<SamplesItem
+							projectTitle="Hosting on 76ers Podcast Network"
+							projectImg={portfolioImg6}
+							imgAlt="Hosting on 76ers Podcast Network Soundcloud"
+							isYoutubeVideo={false}
+							url="https://soundcloud.com/sixers/coat-check-joe-richmond"
+						/>
+					</div>
+
+					{/* Project 8 */}
+					<div className="col-lg-6 col-md-6">
 						<p className="project-title">Writing</p>
 
 						<div
@@ -170,8 +190,8 @@ const SamplesComponent = (props) => {
 						</div>
 					</Modal>
 
-					{/* Project 8 */}
-					<div className="col-md-6">
+					{/* Project 9 */}
+					<div className="col-lg-6 col-md-12">
 						<p className="project-title">Photography</p>
 						<div
 							className="portfolio-item portfolio-writing mx-auto"
