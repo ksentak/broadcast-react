@@ -18,11 +18,11 @@ const HomeComponent = () => (
 						Matt <span className="main-color">Murphy</span>
 					</h1>
 					<p>
-						Matt Murphy is a play-by-play broadcaster and versatile
-						communications professional. Since 2018, Matt has served as the
-						television voice of the Delaware Blue Coats, the NBA G League
-						affiliate of the Philadelphia 76ers. At age 22, he became the
-						youngest play-by-play broadcaster in the NBA G League.
+						Matt Murphy is a play-by-play broadcaster and versatile content
+						professional. Since 2018, Matt has served as the television voice of
+						the Delaware Blue Coats, the NBA G League affiliate of the
+						Philadelphia 76ers. At age 22, he became the youngest play-by-play
+						broadcaster in the NBA G League.
 					</p>
 					<Link to="/about">
 						<button className="btn btn-about">More about Matt</button>
