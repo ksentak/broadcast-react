@@ -28,13 +28,6 @@ const AboutComponent = () => (
 						broadcaster in the NBA G League.
 					</p>
 					<p>
-						In August 2018, Matt was named the inaugural radio voice of the
-						Alvernia University football program in Reading, PA. He completed
-						his second season with the Golden Wolves in 2019, hosting the
-						Alvernia Football Coach’s Show with Head Coach Ralph Clark in
-						addition to his role as the team’s play-by-play broadcaster.
-					</p>
-					<p>
 						Matt is a 2018 graduate of Fordham University in New York City. A
 						proud product of Fordham’s WFUV Sports—a program with a storied
 						history that includes Hall of Famers Vin Scully and Mike Breen—Matt
@@ -45,11 +38,25 @@ const AboutComponent = () => (
 						Bowl LII in Minneapolis, MN. He received the 2018 Marty Glickman
 						Award for excellence in play-by-play broadcasting.
 					</p>
+					<p>
+						Matt is proud to be among the Fordham and WFUV alumni serving as
+						professional basketball play-by-play broadcasters: Mike Breen
+						(ESPN/ABC, New York Knicks), Spero Dedes (TNT, NBA TV), Ryan Ruocco
+						(ESPN/ABC, Brooklyn Nets), Chris Carrino (Brooklyn Nets).
+					</p>
+					<p>
+						In August 2018, Matt was named the inaugural radio voice of the
+						Alvernia University football program in Reading, PA. He completed
+						his second season with the Golden Wolves in 2019, hosting the
+						Alvernia Football Coach’s Show with Head Coach Ralph Clark in
+						addition to his role as the team’s play-by-play broadcaster.
+					</p>
+
 					<p>Matt is a South Jersey native.</p>
 				</div>
 				{/* Bio Photo */}
 				<div className="col-md-6">
-					<LazyLoad height={550} offset={200}>
+					<LazyLoad height={650} offset={200}>
 						<img
 							src={aboutImage}
 							alt="Matt Headshot"
