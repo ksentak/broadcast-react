@@ -85,6 +85,29 @@ const AboutComponent = () => (
 									<FontAwesomeIcon icon={faBriefcase} fixedWidth />
 								</div>
 								<span className="time open-sans-font text-uppercase">
+									May 2021 - Present
+								</span>
+								<h5 className="poppins-font text-uppercase">
+									Digital Content Coordinator
+									<br />
+									<span className="place open-sans-font">
+										- Philadelphia 76ers
+									</span>
+								</h5>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				{/* Resume Box 2 */}
+				<div className="col-lg-6 m-15px-tb">
+					<div className="resume-box">
+						<ul>
+							<li>
+								<div className="icon">
+									<FontAwesomeIcon icon={faBriefcase} fixedWidth />
+								</div>
+								<span className="time open-sans-font text-uppercase">
 									Sep 2018 - Present
 								</span>
 								<h5 className="poppins-font text-uppercase">
@@ -108,7 +131,7 @@ const AboutComponent = () => (
 					</div>
 				</div>
 
-				{/* Resume Box 2 */}
+				{/* Resume Box 3 */}
 				<div className="col-lg-6 m-15px-tb">
 					<div className="resume-box">
 						<ul>
@@ -140,7 +163,7 @@ const AboutComponent = () => (
 					</div>
 				</div>
 
-				{/* Resume Box 3 */}
+				{/* Resume Box 4 */}
 				<div className="col-lg-6 m-15px-tb">
 					<div className="resume-box">
 						<ul>
@@ -170,7 +193,7 @@ const AboutComponent = () => (
 					</div>
 				</div>
 
-				{/* Resume Box 4 */}
+				{/* Resume Box 5 */}
 				<div className="col-lg-6 m-15px-tb">
 					<div className="resume-box">
 						<ul>
@@ -205,7 +228,7 @@ const AboutComponent = () => (
 					</div>
 				</div>
 
-				{/* Resume Box 5 */}
+				{/* Resume Box 6 */}
 				<div className="col-lg-6 m-15px-tb">
 					<div className="resume-box">
 						<ul>
