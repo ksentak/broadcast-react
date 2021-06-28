@@ -95,6 +95,17 @@ const ContactComponent = () => (
 							NBA Call-Ups: An Interview with Matt Murphy
 						</a>
 					</h6>
+
+					<h6 className="mt-3">
+						<a
+							href="https://www.thebiglead.com/posts/matt-murphy-press-pass-podcast-01f3b0z2f75b/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							The Big Lead: Play-by-Play Broadcaster Matt Murphy Talks the
+							G-League Bubble, Radio vs. TV Broadcasting, and More
+						</a>
+					</h6>
 				</div>
 			</div>
 			{/* Row 3 */}
