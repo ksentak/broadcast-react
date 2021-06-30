@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Modal } from 'reactstrap';
 import LazyLoad from 'react-lazy-load';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import SamplesItem from './SamplesItem';
-import PhotoCarousel from './PhotoCarousel';
 import portfolioImg1 from '../assets/img/portfolio/mm_portfolio_img1.jpg';
 import portfolioImg2 from '../assets/img/portfolio/mm_portfolio_img2.jpg';
 import portfolioImg3 from '../assets/img/portfolio/mm_portfolio_img3.jpg';
@@ -13,27 +12,14 @@ import portfolioImg5 from '../assets/img/portfolio/mm_portfolio_img5.jpg';
 import portfolioImg6 from '../assets/img/portfolio/mm_portfolio_img6.jpg';
 import portfolioImg7 from '../assets/img/portfolio/mm_portfolio_img7.jpg';
 import portfolioImg8 from '../assets/img/portfolio/mm_portfolio_img8.jpg';
+import portfolioImg9 from '../assets/img/portfolio/mm_portfolio_img9.jpg';
 
-const SamplesComponent = (props) => {
+const SamplesComponent = () => {
 	const [modal1, setModal1] = useState(false);
 	const [modal2, setModal2] = useState(false);
-	const [width, setWidth] = useState(window.innerWidth);
-	const breakpoint = 768;
-
-	useEffect(() => {
-		const handleResizeWindow = () => setWidth(window.innerWidth);
-		window.addEventListener('resize', handleResizeWindow);
-		return () => {
-			window.removeEventListener('resize', handleResizeWindow);
-		};
-	}, []);
 
 	const toggle1 = () => setModal1(!modal1);
-	const toggle2 = () => {
-		if (width < breakpoint) {
-			setModal2(!modal2);
-		}
-	};
+	const toggle2 = () => setModal2(!modal2);
 
 	return (
 		<div className="PortfolioComponent">
@@ -49,7 +35,7 @@ const SamplesComponent = (props) => {
 					<div className="col-lg-4 col-md-6">
 						<SamplesItem
 							projectTitle="2021 NBA G League Bubble Highlights"
-							projectImg={portfolioImg8}
+							projectImg={portfolioImg1}
 							imgAlt="2021 NBA G League Bubble Highlights"
 							isYoutubeVideo
 							isSpotify={false}
@@ -61,7 +47,7 @@ const SamplesComponent = (props) => {
 					<div className="col-lg-4 col-md-6">
 						<SamplesItem
 							projectTitle="NBA G League TV Play-by-Play"
-							projectImg={portfolioImg1}
+							projectImg={portfolioImg2}
 							imgAlt="NBA G League TV Play-by-Play Youtube Thumbnail"
 							isYoutubeVideo
 							isSpotify={false}
@@ -72,12 +58,12 @@ const SamplesComponent = (props) => {
 					{/* Project 3 */}
 					<div className="col-lg-4 col-md-6">
 						<SamplesItem
-							projectTitle="On Camera/Hosting"
-							projectImg={portfolioImg2}
-							imgAlt="On Camera/Hosting Youtube Thumbnail"
+							projectTitle="Solo TV Call At 2021 G League Bubble"
+							projectImg={portfolioImg3}
+							imgAlt="Solo TV Call At 2021 G League Bubble Thumbnail"
 							isYoutubeVideo
 							isSpotify={false}
-							videoId="WNuL9exqL94"
+							videoId="QaGhFim4Rvk"
 						/>
 					</div>
 
@@ -85,7 +71,7 @@ const SamplesComponent = (props) => {
 					<div className="col-lg-3 col-md-6">
 						<SamplesItem
 							projectTitle="NBA G League Radio Play-by-Play"
-							projectImg={portfolioImg3}
+							projectImg={portfolioImg4}
 							imgAlt="NBA G League Radio Play-by-Play Soundcloud"
 							isYoutubeVideo={false}
 							isSpotify={false}
@@ -97,7 +83,7 @@ const SamplesComponent = (props) => {
 					<div className="col-lg-3 col-md-6">
 						<SamplesItem
 							projectTitle="CFB Radio Play-by-Play Highlights"
-							projectImg={portfolioImg4}
+							projectImg={portfolioImg5}
 							imgAlt="CFB Radio Play-by-Play Highlights Soundcloud"
 							isYoutubeVideo={false}
 							isSpotify={false}
@@ -109,7 +95,7 @@ const SamplesComponent = (props) => {
 					<div className="col-lg-3 col-md-6">
 						<SamplesItem
 							projectTitle="CFB Radio 1st MAC Win Highlights"
-							projectImg={portfolioImg5}
+							projectImg={portfolioImg6}
 							imgAlt="CFB Radio 1st MAC Win Highlights Soundcloud"
 							isYoutubeVideo={false}
 							isSpotify={false}
@@ -121,7 +107,7 @@ const SamplesComponent = (props) => {
 					<div className="col-lg-3 col-md-6">
 						<SamplesItem
 							projectTitle="Hosting on 76ers Podcast Network"
-							projectImg={portfolioImg6}
+							projectImg={portfolioImg7}
 							imgAlt="Hosting on 76ers Podcast Network Soundcloud"
 							isYoutubeVideo={false}
 							isSpotify={true}
@@ -143,7 +129,7 @@ const SamplesComponent = (props) => {
 							<LazyLoad>
 								<img
 									className="img-fluid portfolio-img portfolio-img-lg"
-									src={portfolioImg7}
+									src={portfolioImg8}
 									alt="Writing sample"
 								/>
 							</LazyLoad>
@@ -179,7 +165,7 @@ const SamplesComponent = (props) => {
 											{/* Portfolio Modal - Media */}
 											<img
 												className="img-fluid"
-												src={portfolioImg7}
+												src={portfolioImg8}
 												alt="Writing sample"
 											/>
 											<a
@@ -199,8 +185,9 @@ const SamplesComponent = (props) => {
 					</Modal>
 
 					{/* Project 9 */}
-					<div className="col-lg-6 col-md-12">
-						<p className="project-title">Photography</p>
+					<div className="col-lg-6 col-md-6">
+						<p className="project-title">Writing</p>
+
 						<div
 							className="portfolio-item portfolio-writing mx-auto"
 							onClick={toggle2}
@@ -209,7 +196,11 @@ const SamplesComponent = (props) => {
 								<div className="portfolio-item-caption-content text-center" />
 							</div>
 							<LazyLoad>
-								<PhotoCarousel className="img-fluid portfolio-img" />
+								<img
+									className="img-fluid portfolio-img portfolio-img-lg"
+									src={portfolioImg9}
+									alt="Writing sample"
+								/>
 							</LazyLoad>
 						</div>
 					</div>
@@ -238,10 +229,23 @@ const SamplesComponent = (props) => {
 										<div className="col-12 col-sm-10">
 											{/* Portfolio Modal - Title */}
 											<h2 className="portfolio-modal-title text-uppercase mb-3">
-												Photography
+												Writing
 											</h2>
 											{/* Portfolio Modal - Media */}
-											<PhotoCarousel />
+											<img
+												className="img-fluid"
+												src={portfolioImg9}
+												alt="Writing sample"
+											/>
+											<a
+												target="_blank"
+												href="https://www.nba.com/sixers/tyrese-maxey-shines-76ers-game-6-victory-vs-hawks "
+												rel="noopener noreferrer"
+											>
+												<button className="mt-3 btn btn-about">
+													Read article
+												</button>
+											</a>
 										</div>
 									</div>
 								</div>
