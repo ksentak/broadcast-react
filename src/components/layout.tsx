@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import Navbar from './navbar';
+import Footer from './footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/main.css';
 
@@ -12,6 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
 		<>
 			<Navbar />
 			<main>{children}</main>
+			<Footer />
 		</>
 	);
 };
