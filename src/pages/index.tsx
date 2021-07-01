@@ -1,12 +1,17 @@
 import React from 'react';
+import HomeComponent from '../components/homeComponent';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const IndexPage = () => (
-	<Layout>
-		<SEO title="Home" />
-		<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>Hello</div>
-	</Layout>
-);
+const Home = () => {
+	return (
+		<Layout>
+			<SEO title="Home" />
+			<div className="Home">
+				<HomeComponent />
+			</div>
+		</Layout>
+	);
+};
 
-export default IndexPage;
+export default Home;

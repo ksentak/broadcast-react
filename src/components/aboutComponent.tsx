@@ -5,7 +5,6 @@ import {
 	faBriefcase,
 	faGraduationCap
 } from '@fortawesome/free-solid-svg-icons';
-// import aboutImage from '../images/MM1_Home.jpg';
 
 const AboutComponent = () => (
 	<div className="AboutComponent">

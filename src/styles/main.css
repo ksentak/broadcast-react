@@ -59,6 +59,12 @@ a:active {
 	outline: 0;
 }
 
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1140px !important;
+	}
+}
+
 .main-color {
 	color: #007ced;
 }
