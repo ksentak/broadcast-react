@@ -56,7 +56,7 @@ const AboutComponent = () => (
 				{/* Bio Photo */}
 				<div className="col-md-6">
 					<StaticImage
-						src="../../images/MM1_Home.jpg"
+						src="../images/MM1_Home.jpg"
 						alt="Matt Headshot"
 						className="img-fluid about-img pl-none pl-md-3"
 					/>
