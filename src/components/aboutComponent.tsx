@@ -1,10 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-	faBriefcase,
-	faGraduationCap
-} from '@fortawesome/free-solid-svg-icons';
+import ResumeBox from './resumeBox';
 
 const AboutComponent = () => (
 	<div className="AboutComponent">
@@ -74,179 +70,69 @@ const AboutComponent = () => (
 				</div>
 
 				{/* Resume Box 1 */}
-				<div className="col-lg-6 m-15px-tb">
-					<div className="resume-box">
-						<ul>
-							<li>
-								<div className="icon">
-									<FontAwesomeIcon icon={faBriefcase} fixedWidth />
-								</div>
-								<span className="time open-sans-font text-uppercase">
-									May 2021 - Present
-								</span>
-								<h5 className="poppins-font text-uppercase">
-									Digital Content Coordinator
-									<br />
-									<span className="place open-sans-font">
-										- Philadelphia 76ers
-									</span>
-								</h5>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<ResumeBox
+					role="Digital Content Coordinator"
+					company="Philadelphia 76ers"
+					date="May 2021 - Present"
+				/>
 
 				{/* Resume Box 2 */}
-				<div className="col-lg-6 m-15px-tb">
-					<div className="resume-box">
-						<ul>
-							<li>
-								<div className="icon">
-									<FontAwesomeIcon icon={faBriefcase} fixedWidth />
-								</div>
-								<span className="time open-sans-font text-uppercase">
-									Sep 2018 - Present
-								</span>
-								<h5 className="poppins-font text-uppercase">
-									Play-by-Play Broadcaster; Communications
-									<br />
-									<span className="place open-sans-font">
-										- Delaware Blue Coats
-									</span>
-								</h5>
-								<p className="open-sans-font">
-									-Harris Blitzer Sports & Entertainment: Philadelphia
-									76ers/Delaware Blue Coats/76ers Gaming Club (GC).
-									<br />
-									-Play-by-Play, Communications, Social Media for the Delaware
-									Blue Coats, NBA G League affiliate of the Philadelphia 76ers.
-									<br />
-									-Youngest play-by-play broadcaster in the NBA G League.
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<ResumeBox
+					role="Play-by-Play Broadcaster; Communications"
+					company="Delaware Blue Coats"
+					date="Sep 2018 - Present"
+					accomplishment1="-Harris Blitzer Sports & Entertainment: Philadelphia
+          76ers/Delaware Blue Coats/76ers Gaming Club (GC)."
+					accomplishment2="-Play-by-Play, Communications, Social Media for the Delaware
+          Blue Coats, NBA G League affiliate of the Philadelphia 76ers."
+					accomplishment3="-Youngest play-by-play broadcaster in the NBA G League."
+				/>
 
 				{/* Resume Box 3 */}
-				<div className="col-lg-6 m-15px-tb">
-					<div className="resume-box">
-						<ul>
-							<li>
-								<div className="icon">
-									<FontAwesomeIcon icon={faBriefcase} fixedWidth />
-								</div>
-								<span className="time open-sans-font text-uppercase">
-									Sep 2018 - Present
-								</span>
-								<h5 className="poppins-font text-uppercase">
-									Play-by-Play Broadcaster
-									<br />
-									<span className="place open-sans-font">
-										- Alvernia University Football
-									</span>
-								</h5>
-								<p className="open-sans-font">
-									-Radio play-by-play broadcaster for Alvernia University
-									football on Sports Radio 1240.
-									<br />
-									-Weekly host of "The Ralph Clark Show" with Alvernia head
-									football coach Ralph Clark and players.
-									<br />
-									-Named inaugural voice of football program in 2018.
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<ResumeBox
+					role="Play-by-Play Broadcaster"
+					company="Alvernia University Football"
+					date="Sep 2018 - Present"
+					accomplishment1="-Radio play-by-play broadcaster for Alvernia University
+          football on Sports Radio 1240."
+					accomplishment2={`-Weekly host of "The Ralph Clark Show" with Alvernia head
+          football coach Ralph Clark and players.`}
+					accomplishment3="-Named inaugural voice of football program in 2018."
+				/>
 
 				{/* Resume Box 4 */}
-				<div className="col-lg-6 m-15px-tb">
-					<div className="resume-box">
-						<ul>
-							<li>
-								<div className="icon">
-									<FontAwesomeIcon icon={faBriefcase} fixedWidth />
-								</div>
-								<span className="time open-sans-font text-uppercase">
-									Jan 2017 - Sep 2018
-								</span>
-								<h5 className="poppins-font text-uppercase">
-									Sports Radio Production Assistant/Board Operator
-									<br />
-									<span className="place open-sans-font">- Westwood One</span>
-								</h5>
-								<p className="open-sans-font">
-									-Production assistant for Westwood One's national radio
-									coverage of the NFL and NCAA Basketball.
-									<br />
-									-Board operator for coverage of the 2018 Winter Olympic Games.{' '}
-									<br />
-									-Highlight editor for events such as the Super Bowl and the
-									NCAA Tournament.
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<ResumeBox
+					role="Sports Radio Production Assistant/Board Operator"
+					company="Westwood One"
+					date="Jan 2017 - Sep 2018"
+					accomplishment1="-Production assistant for Westwood One's national radio
+          coverage of the NFL and NCAA Basketball."
+					accomplishment2="-Board operator for coverage of the 2018 Winter Olympic Games."
+					accomplishment3="-Highlight editor for events such as the Super Bowl and the
+          NCAA Tournament."
+				/>
 
 				{/* Resume Box 5 */}
-				<div className="col-lg-6 m-15px-tb">
-					<div className="resume-box">
-						<ul>
-							<li>
-								<div className="icon">
-									<FontAwesomeIcon icon={faBriefcase} fixedWidth />
-								</div>
-								<span className="time open-sans-font text-uppercase">
-									Oct 2014 - May 2018
-								</span>
-								<h5 className="poppins-font text-uppercase">
-									Sports Reporter, Play-by-Play
-									<br />
-									<span className="place open-sans-font">
-										- WFUV Public Radio
-									</span>
-								</h5>
-								<p className="open-sans-font">
-									-Marty Glickman Award for Excellence in Play-by-Play
-									broadcasting (2018)
-									<br />
-									-On-Air experience: PxP, Host, Sideline
-									<br />
-									-Beat Reporter: New York Jets, New York Rangers, New Jersey
-									Devils
-									<br />
-									-Special assignments: Super Bowl LII, NBA Draft 16 17, NCAA
-									Tournament 16 17, NFL Draft 16
-								</p>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<ResumeBox
+					role="Sports Reporter, Play-by-Play"
+					company="WFUV Public Radio"
+					date="Oct 2014 - May 2018"
+					accomplishment1="-Marty Glickman Award for Excellence in Play-by-Play
+          broadcasting (2018)"
+					accomplishment2="-On-Air experience: PxP, Host, Sideline"
+					accomplishment3="-Beat Reporter: New York Jets, New York Rangers, New Jersey
+          Devils"
+					accomplishment4='-Special assignments: Super Bowl LII, NBA Draft 16 17, NCAA
+          Tournament 16 17, NFL Draft 16"'
+				/>
 
 				{/* Resume Box 6 */}
-				<div className="col-lg-6 m-15px-tb">
-					<div className="resume-box">
-						<ul>
-							<li>
-								<div className="icon">
-									<FontAwesomeIcon icon={faGraduationCap} fixedWidth />
-								</div>
-								<span className="time open-sans-font text-uppercase">
-									Sep 2014 - May 2018
-								</span>
-								<h5 className="poppins-font text-uppercase">
-									Bachelor's Degree, Economics, Communications
-									<br />
-									<span className="place open-sans-font">
-										- Fordham University
-									</span>
-								</h5>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<ResumeBox
+					role="Bachelor's Degree, Economics, Communications"
+					company="Fordham University"
+					date="Sep 2014 - May 2018"
+					isSchool
+				/>
 			</div>
 		</div>
 	</div>
