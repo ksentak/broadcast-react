@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'gatsby';
 
 const Navbar = () => {
-	const [menu, setAsOpen] = useState(false);
+	const [menu, setAsOpen] = useState<boolean>(false);
 
-	const toggleNav = () => {
+	const toggleNav = (): void => {
 		setAsOpen(!menu);
 	};
 
-	const show = menu ? 'show' : '';
+	const show: string = menu ? 'show' : '';
 
 	return (
 		<div className="Navbar">
 			<nav className="navbar navbar-expand-sm">
 				<div className="container navContainer">
 					<button
-						className="navbar-toggler ml-auto"
+						className="navbar-toggler ms-auto"
 						type="button"
 						aria-controls="navbarMobile"
 						aria-expanded="false"
@@ -25,50 +25,38 @@ const Navbar = () => {
 						<span className="navbar-toggler-icon" />
 					</button>
 					<div className={`collapse navbar-collapse ${show}`}>
-						<ul id="menu-primary" className="navbar-nav ml-auto">
+						<ul id="menu-primary" className="navbar-nav ms-auto">
 							{/* Home */}
 							<li onClick={toggleNav}>
-								<NavLink
-									exact
-									to="/"
-									activeClassName="active"
-									className="nav-Link"
-								>
+								<Link to="/" activeClassName="active" className="nav-Link">
 									Home
-								</NavLink>
+								</Link>
 							</li>
 							{/* About */}
 							<li onClick={toggleNav}>
-								<NavLink
-									exact
-									to="/about"
-									activeClassName="active"
-									className="nav-Link"
-								>
+								<Link to="/about" activeClassName="active" className="nav-Link">
 									About
-								</NavLink>
+								</Link>
 							</li>
 							{/* Samples */}
 							<li onClick={toggleNav}>
-								<NavLink
-									exact
+								<Link
 									to="/samples"
 									activeClassName="active"
 									className="nav-Link"
 								>
 									Samples
-								</NavLink>
+								</Link>
 							</li>
 							{/* Contact */}
 							<li onClick={toggleNav}>
-								<NavLink
-									exact
+								<Link
 									to="/contact"
 									activeClassName="active"
 									className="nav-Link"
 								>
 									Contact
-								</NavLink>
+								</Link>
 							</li>
 						</ul>
 					</div>

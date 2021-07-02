@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SpotifyPlayer = () => {
+const SpotifyPlayer: React.FC = () => {
 	return (
 		<>
 			<iframe
@@ -8,7 +8,7 @@ const SpotifyPlayer = () => {
 				width="100%"
 				height="330"
 				frameBorder="0"
-				allowtransparency="true"
+				allowTransparency={true}
 				title="Sixers Coat Check Podcast"
 			></iframe>
 		</>

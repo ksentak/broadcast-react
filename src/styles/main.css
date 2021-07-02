@@ -59,6 +59,12 @@ a:active {
 	outline: 0;
 }
 
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1140px !important;
+	}
+}
+
 .main-color {
 	color: #007ced;
 }
@@ -571,6 +577,8 @@ body.admin-bar .fixed-top {
 	font-size: 26px;
 	line-height: 40px;
 	color: #007ced;
+	border: none;
+	background-color: #222222;
 	opacity: 1;
 }
 

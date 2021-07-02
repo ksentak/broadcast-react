@@ -1,26 +1,30 @@
 import React, { useState } from 'react';
 import { Modal } from 'reactstrap';
-import LazyLoad from 'react-lazy-load';
-import Player from 'react-lazy-youtube';
 import ReactPlayer from 'react-player/lazy';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import SpotifyPlayer from './SpotifyPlayer';
+import SpotifyPlayer from './spotifyPlayer';
 
-const SamplesItem = (props) => {
+interface SamplesItemProps {
+	projectTitle: string;
+	projectImg: string;
+	imgAlt: string;
+	isYoutubeVideo: boolean;
+	isSpotify: boolean;
+	url: string;
+}
+
+const SamplesItem: React.FC<SamplesItemProps> = ({
+	projectTitle,
+	projectImg,
+	imgAlt,
+	isYoutubeVideo,
+	isSpotify,
+	url
+}) => {
 	const [modal, setModal] = useState(false);
 
 	const toggle = () => setModal(!modal);
-
-	const {
-		projectTitle,
-		projectImg,
-		imgAlt,
-		isYoutubeVideo,
-		isSpotify,
-		videoId,
-		url
-	} = props;
 
 	return (
 		<>
@@ -30,13 +34,11 @@ const SamplesItem = (props) => {
 				<div className="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
 					<div className="portfolio-item-caption-content text-center" />
 				</div>
-				<LazyLoad>
-					<img
-						className="img-fluid portfolio-img"
-						src={projectImg}
-						alt={imgAlt}
-					/>
-				</LazyLoad>
+				<img
+					className="img-fluid portfolio-img"
+					src={projectImg}
+					alt={imgAlt}
+				/>
 			</div>
 
 			{/* Modal */}
@@ -68,9 +70,8 @@ const SamplesItem = (props) => {
 									</h2>
 									{/* Portfolio Modal - Media */}
 									{isYoutubeVideo ? (
-										<Player
-											id={videoId}
-											imageSize="maxresdefault"
+										<ReactPlayer
+											url={url}
 											className="youtube-video-modal"
 											styles={{
 												height: '330px',
@@ -78,7 +79,7 @@ const SamplesItem = (props) => {
 											}}
 										/>
 									) : isSpotify ? (
-										<SpotifyPlayer src={url} />
+										<SpotifyPlayer />
 									) : (
 										<ReactPlayer url={url} width="auto" height="330px" />
 									)}

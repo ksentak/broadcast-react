@@ -1,11 +1,10 @@
 import React from 'react';
-import LazyLoad from 'react-lazy-load';
+import RecentPress from './contactRecentPress';
+import { StaticImage } from 'gatsby-plugin-image';
 import { Timeline } from 'react-twitter-widgets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
-import contactImage2 from '../assets/img/MM5_Contact.jpg';
-import contactImage1 from '../assets/img/MM4_Contact.jpeg';
 
 const ContactComponent = () => (
 	<div className="ContactComponent">
@@ -54,86 +53,60 @@ const ContactComponent = () => (
 				</div>
 
 				<div className="col-12 col-lg-7">
-					<LazyLoad offset={200}>
-						<img
-							src={contactImage1}
-							alt="Matt looking at phone"
-							className="contact-img"
-						/>
-					</LazyLoad>
+					<StaticImage
+						src="../images/MM4_Contact.jpeg"
+						alt="Matt looking at phone"
+						className="contact-img"
+					/>
 				</div>
 			</div>
 			{/* Row 2 */}
 			<div className="row mt-4 mb-4">
 				<div className="col-12">
 					<h3>Recent Press</h3>
-					<h6 className="mt-3">
-						<a
-							href="https://thepaintedlines.com/legends-of-broadcasting-marc-zumoff-tom-mcginnis-matt-murphy-on-the-art-of-the-play-by-play/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							Legends of Broad(casting): Marc Zumoff, Tom McGinnis & Matt Murphy
-							on the Art of the Play-by-Play
-						</a>
-					</h6>
-					<h6 className="mt-3">
-						<a
-							href="https://wfuv.org/content/air-matt-murphy"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							Off the Air: The Legacy of WFUV Sports - Matt Murphy
-						</a>
-					</h6>
-					<h6 className="mt-3">
-						<a
-							href="https://nbacallups.com/2020/08/21/interview-matt-murphy-delaware-blue-coats/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							NBA Call-Ups: An Interview with Matt Murphy
-						</a>
-					</h6>
 
-					<h6 className="mt-3">
-						<a
-							href="https://www.thebiglead.com/posts/matt-murphy-press-pass-podcast-01f3b0z2f75b/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							The Big Lead: Play-by-Play Broadcaster Matt Murphy Talks the
-							G-League Bubble, Radio vs. TV Broadcasting, and More
-						</a>
-					</h6>
+					<RecentPress
+						link="https://thepaintedlines.com/legends-of-broadcasting-marc-zumoff-tom-mcginnis-matt-murphy-on-the-art-of-the-play-by-play/"
+						text="	Legends of Broad(casting): Marc Zumoff, Tom McGinnis & Matt Murphy
+							on the Art of the Play-by-Play"
+					/>
+					<RecentPress
+						link="https://wfuv.org/content/air-matt-murphy"
+						text="Off the Air: The Legacy of WFUV Sports - Matt Murphy"
+					/>
+					<RecentPress
+						link="https://nbacallups.com/2020/08/21/interview-matt-murphy-delaware-blue-coats/"
+						text="NBA Call-Ups: An Interview with Matt Murphy"
+					/>
+					<RecentPress
+						link="https://www.thebiglead.com/posts/matt-murphy-press-pass-podcast-01f3b0z2f75b/"
+						text="The Big Lead: Play-by-Play Broadcaster Matt Murphy Talks the
+							G-League Bubble, Radio vs. TV Broadcasting, and More"
+					/>
 				</div>
 			</div>
 			{/* Row 3 */}
 			<div className="row mt-4">
 				<div className="col-12 col-lg-5">
-					<LazyLoad offset={200}>
-						<Timeline
-							dataSource={{
-								sourceType: 'profile',
-								screenName: 'Matt_Murphy04'
-							}}
-							options={{
-								height: '450',
-								width: '400',
-								theme: 'dark'
-							}}
-						/>
-					</LazyLoad>
+					<Timeline
+						dataSource={{
+							sourceType: 'profile',
+							screenName: 'Matt_Murphy04'
+						}}
+						options={{
+							height: '450',
+							width: '400',
+							theme: 'dark'
+						}}
+					/>
 				</div>
 
 				<div className="col-12 col-lg-7 d-none d-lg-block">
-					<LazyLoad offset={200}>
-						<img
-							src={contactImage2}
-							alt="Walking with Blue Coats player"
-							className="img-fluid contact-img2"
-						/>
-					</LazyLoad>
+					<StaticImage
+						src="../images/MM5_Contact.jpg"
+						alt="Walking with Blue Coats player"
+						className="img-fluid contact-img2"
+					/>
 				</div>
 			</div>
 		</div>
