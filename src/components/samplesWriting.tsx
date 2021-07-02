@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import React, { useState, useEffect } from 'react';
 import { Modal } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -15,6 +14,10 @@ const SamplesWriting: React.FC<SamplesWritingProps> = ({
 }) => {
 	const [modal, setModal] = useState(false);
 
+	useEffect(() => {
+		console.log(imgSrc);
+	}, []);
+
 	const toggle = () => setModal(!modal);
 	return (
 		<>
@@ -29,7 +32,7 @@ const SamplesWriting: React.FC<SamplesWritingProps> = ({
 						<div className="portfolio-item-caption-content text-center" />
 					</div>
 
-					<StaticImage
+					<img
 						className="img-fluid portfolio-img portfolio-img-lg"
 						src={imgSrc}
 						alt="Writing sample"

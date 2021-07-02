@@ -1,15 +1,15 @@
 import React from 'react';
 import SamplesItem from './samplesItem';
 import SamplesWriting from './samplesWriting';
-import portfolioImg1 from '../assets/img/portfolio/mm_portfolio_img1.jpg';
-import portfolioImg2 from '../assets/img/portfolio/mm_portfolio_img2.jpg';
-import portfolioImg3 from '../assets/img/portfolio/mm_portfolio_img3.jpg';
-import portfolioImg4 from '../assets/img/portfolio/mm_portfolio_img4.jpg';
-import portfolioImg5 from '../assets/img/portfolio/mm_portfolio_img5.jpg';
-import portfolioImg6 from '../assets/img/portfolio/mm_portfolio_img6.jpg';
-import portfolioImg7 from '../assets/img/portfolio/mm_portfolio_img7.jpg';
-import portfolioImg8 from '../assets/img/portfolio/mm_portfolio_img8.jpg';
-import portfolioImg9 from '../assets/img/portfolio/mm_portfolio_img9.jpg';
+import portfolioImg1 from '../images/portfolio/mm_portfolio_img1.jpg';
+import portfolioImg2 from '../images/portfolio/mm_portfolio_img2.jpg';
+import portfolioImg3 from '../images/portfolio/mm_portfolio_img3.jpg';
+import portfolioImg4 from '../images/portfolio/mm_portfolio_img4.jpg';
+import portfolioImg5 from '../images/portfolio/mm_portfolio_img5.jpg';
+import portfolioImg6 from '../images/portfolio/mm_portfolio_img6.jpg';
+import portfolioImg7 from '../images/portfolio/mm_portfolio_img7.jpg';
+import portfolioImg8 from '../images/portfolio/mm_portfolio_img8.jpg';
+import portfolioImg9 from '../images/portfolio/mm_portfolio_img9.jpg';
 
 const SamplesComponent = () => {
 	return (

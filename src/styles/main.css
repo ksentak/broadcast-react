@@ -577,6 +577,8 @@ body.admin-bar .fixed-top {
 	font-size: 26px;
 	line-height: 40px;
 	color: #007ced;
+	border: none;
+	background-color: #222222;
 	opacity: 1;
 }
 
