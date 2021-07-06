@@ -73,10 +73,8 @@ const SamplesItem: React.FC<SamplesItemProps> = ({
 										<ReactPlayer
 											url={url}
 											className="youtube-video-modal"
-											styles={{
-												height: '330px',
-												width: 'auto'
-											}}
+											width="auto"
+											height="330px"
 										/>
 									) : isSpotify ? (
 										<SpotifyPlayer />
